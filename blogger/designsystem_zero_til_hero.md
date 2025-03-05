@@ -1,3 +1,9 @@
+---
+title: Designsystem - fra zero til hero
+date: 2025-03-05
+published:
+---
+
 # Designsystem - fra zero til hero
 
 Et par disclaimers: jeg var strengt tatt ikke helt ingenting, eller zero, når jeg begynte denne læringsreisen. Jeg har jobbet med .... . Om jeg er blitt noen hero er også høyst diskutabelt, men at jeg har fått en brukbar forståelse for do's and dont's' på feltet er ikke å tøye strikken.
