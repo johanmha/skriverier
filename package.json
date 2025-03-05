@@ -1,0 +1,21 @@
+{
+  "name": "skriverier",
+  "version": "1.0.0",
+  "description": "Skriverier til blogger",
+  "main": "",
+  "type": "module",
+  "scripts": {
+    "update-publication-table": "node genererPublikasjonsTabell.js && npm run format:table",
+    "format": "npx prettier --write .",
+    "format:table": "npx prettier --write ./publiseringer.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johanmha/skriverier.git"
+  },
+  "author": "Johan M. Haugland",
+  "homepage": "https://github.com/johanmha/skriverier#readme",
+  "devDependencies": {
+    "prettier": "3.5.3"
+  }
+}
