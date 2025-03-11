@@ -36,6 +36,16 @@ Det spennende nå blir å se hva du får når du tenker og grubler på arkitektu
 
 ###
 
+## Konklusjon
+
+Et designsystem gir deg et consistent(norsk?) uttrykk på web-sidene dine, og du slipper å implementere tidkrevende ting som universell utforming på nytt hver gang. Det er jo ikke noe man må ha, men det er ikke dumt å ha heller. Du får også generelle komponenter rett ut av boksen, og kan spare tid på den måten. I tillegg har vi jo alle opplevd at vi gjerne skulle ha dokumentert vår egen kode bedre, både for å forstå valgene, men også noen ganger bare for å forstå.
+
+Det korteste veien til mål er nok likevel å bare bruke et av de store komponentbibliotekene som ...(legg inn lenker til et par eksempler her). Resultatet blir noe masseprodusert, men bryr den generelle brukeren seg noe særlig om det? Neppe.
+
+Så burde du lage ditt eget designsystem (yet another yadsy aka yayadsy)? Vel, det som taler mest for det er nok innsikten du får på veien.
+
+Også er det jo gøy da.
+
 ### Notater til meg selv
 
 - Storybook
@@ -47,6 +57,12 @@ Det spennende nå blir å se hva du får når du tenker og grubler på arkitektu
 - Opplever at den store forskjellen er dokumentasjon og verktøy som lint og cli. Dette sørger for (enforcer (hva er det på norsk?)) at bruken er korrekt. Eksempel: style-lint (https://aksel.nav.no/grunnleggende/kode/stylelint). Dette er særlig viktig for større organisasjoner, men selv om man bare bruker sitt eget designsystem selv, så vet man jo at man kan glemme valg man har gjort og hvordan ting skal gjøres. Lint fungerer også som dokumentasjon.
 - Når er det nyttig å lage et designsystem? I hvilken skala er det nyttig? Kan det være nyttig for en selv? Er det bedre å bruke store designsystem fra npm? Fordeler og ulemper?
 - Hvis man har et design i Figma, så skulle man tro det ganske kjapt kan være nyttig å implementere det som et designsystem?
+- Hovedpoeng med et designsystem er å spare tid i implementasjon og å sikre en konsistent brukeropplevelse. (Flere ting?). Hvilke ting er det mest tid å spare på? Når er en organisasjon stor nok til at man sparer inn tid på å bygge og vedlikeholde et designsystem?
+- WCAG/UU er komplekst å sette seg inn i. Å sikre dette vil kunne være effektivt gjennom et designsystem (noen ting som kontraster må brukeren selv sørge for. Må bruke verktøy for å verifisere kontraster)
+- Fleksibilitet er essensielt for at et bibliotek skal være brukbart, siden alle/mange vil ha sine egne spesialtilfeller som det ikke er mulig/ønskelig/for ressurskrevende å dekke opp for. Dermed må det være rom for å endre/fleksibilitet for å sikre bred adopsjon.
+- Refleksjonene i denne bloggen er basert på refleksjoner og teoretisk kunnskap. Har du erfaringer på hva som egentlig betyr noe? Fyr av en kule i kommentarfeltet.
+- Konsistente mønstre, defaults og navnekonvensjoner er viktig for brukervennlighet. Brukervennlighet er halvparten av poenget (den andre er konsistent brukeropplevelse)
+- UX og DevX er alt. Kjapt og enkelt å bruke for å lage konsistente og brukervennlige web-sider.
 
 #### Aksel
 
