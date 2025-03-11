@@ -6,11 +6,15 @@ published:
 
 # Designsystem - fra zero til hero
 
-Et par disclaimers: jeg var strengt tatt ikke helt ingenting, eller zero, når jeg begynte denne læringsreisen. Jeg har jobbet med og brukt designsystemer tidligere i ulike former og fasonger, men har aldri virkelig godt i dybden på hvilke tanker og valg som inngår i designet av et skikkelig bra designsystem. Om jeg er blitt noen hero er også høyst diskutabelt, men at jeg har fått en brukbar forståelse for do's and dont's' på feltet er ikke å tøye strikken.
+Et par disclaimers: jeg var strengt tatt ikke helt ingenting, eller zero, når jeg begynte denne læringsreisen. Jeg har jobbet med og brukt designsystemer tidligere i ulike former og fasonger, men har aldri virkelig gått i dybden på hvilke tanker og valg som inngår i designet av et skikkelig bra designsystem. Om jeg er blitt noen hero er også høyst diskutabelt, men at jeg har fått en brukbar forståelse for do's and dont's' på feltet er ikke å tøye strikken.
 
-Til slutt før vi begynner: hvor ok språkrådet er med at jeg skriver zero til hero på norsk er jeg usikker på, men når Disney kunne gjøre det i sin 1997?-klassiker, Herkules, så må det være greit at også jeg gjør det.
+Til slutt før vi begynner: hvor ok språkrådet er med at jeg skriver zero til hero på norsk er jeg usikker på, men når Disney kunne gjøre det i sin 1997-klassiker, Herkules, så må det være greit at også jeg gjør det.
 
-## Introduksjon (finn en mer catchy tittel?)
+## TLDR
+
+Dårlig tid? Ingen lesehest? Hopp rett til [konklusjonen](#konklusjon)
+
+## Introduksjon
 
 ### Litt om hva dette ikke er (og er)
 
@@ -26,23 +30,25 @@ Det denne bloggposten er, er i stedet en samling betraktninger på hva som gjør
 
 Ordet designsystem kan strengt tatt brukes om flere ting. I designverden kan det for eksempel være et design satt opp i eksempelvis Figma, som beskriver alt fra de minste bestanddelene som farger og fonter, til grunnkomponenter som knapper og inputfelter, til større sammenstillinger som kort, og hele sider.
 
-Slik sett er det nært beslektet designsystemet vi snakker om i denne bloggposten: komponentbiblioteket brukt i frontend-utvikling. Det består i følge Storybook av
+Slik sett er det nært beslektet designsystemet vi snakker om i denne bloggposten: komponentbiblioteket brukt i frontend-utvikling. [Det består i følge Storybook av](https://storybook.js.org/tutorials/design-systems-for-developers/react/en/introduction/)
 
-- design tokens
 - komponenter
+- design tokens
 - dokumentasjon
 
 ### Prosessen/Metoden
 
-Begynte med å sette opp mitt eget system uten å tenke noe særlig på hva som er lurt og hva som er skikkelig dumt. Med hjelp av min foretrukne språkmotor kom det opp fort og gæli, og er i dag ute som et konsept-system på NPM. Resultatet ble yadsy (yet another design system), som kan sjekkes opp [her](https://github.com/johanmha/yadsy).
+Jeg begynte med å sette opp mitt eget system uten å tenke noe særlig på hva som er lurt og hva som er skikkelig dumt. Med hjelp av min foretrukne språkmotor kom det opp fort og gæli, og er i dag ute som et konsept-system på NPM. Resultatet ble yadsy (yet another design system), som kan sjekkes opp [her](https://github.com/johanmha/yadsy).
 
-Deretter undersøkt jeg norske state of the art(finn norsk ord) designsystemer fra [NAV](https://main--66b4b3beb91603ed0ab5c45e.chromatic.com/?path=/docs/docs-getting-started--docs) og [Digdir](https://www.designsystemet.no/). Jeg har dykket ned i dokumentasjon og kode for å forstå hvilke valg de har tatt, hva de har gjort og ikke minst, hva de ikke har gjort.
+Deretter undersøkt jeg norske state-of-the-art designsystemer fra [NAV](https://main--66b4b3beb91603ed0ab5c45e.chromatic.com/?path=/docs/docs-getting-started--docs) og [Digdir](https://www.designsystemet.no/). Jeg har dykket ned i dokumentasjon og kode for å forstå hvilke valg de har tatt, hva de har gjort, og ikke minst, hva de ikke har gjort.
 
 Det spennende nå blir å se hva du får når du tenker og grubler på arkitekturen, heller enn å bare kaste noe på veggen og se hva som skjer.
 
 ## Resultater
 
-La oss rydde det mest åpenbare unna veien først: Når det kommer til kjernen av et designsystem; komponenter og tokens pluss dokumentasjon, har Aksel _mye_ mer innhold en yadsy. Det er grunnkomponenter for de fleste behov, et stort arsenal av former, farger pluss alt annet av tokens, og også template-layouts? som kan brukes som base for å lage sider med en konsistent utførelse. Dette er kanskje det minst interessante funnet, ettersom det åpenbart er sånn det måtte være. Volum kommer med tid og energi, prøving og feiling av hva som behøves og å med tiden finne ut hvor skoen trykker. Det mer interessant ligger i detaljene.
+### Generelt
+
+La oss rydde det mest åpenbare unna veien først: Når det kommer til kjernen av et designsystem; komponenter og tokens pluss dokumentasjon, har designsystemene _mye_ mer innhold en yadsy. Det er grunnkomponenter for de fleste behov, et stort arsenal av former, farger pluss alt annet av tokens, og også ting som layout primitives, som kan brukes som base for å lage sider med en konsistent utførelse. Dette er kanskje det minst interessante funnet, ettersom det åpenbart er sånn det måtte være. Volum kommer med tid og energi, og nav og digdir har brukt mye mer av begge deler enn det som er puttet i yadsy. Det mer interessant ligger i detaljene.
 
 Det er to ting i kjernen av behovet et designsystem dekker:
 
@@ -51,17 +57,56 @@ Det er to ting i kjernen av behovet et designsystem dekker:
 
 I tillegg kan man argumentere for at et hovedpunkt er å sikre overholdelse av krav og regelverk (les: WCAG/universell utforming), men jeg tenker dette dekkes av punktene over.
 
-putter dette inn i å spare tid, siden man løser et problem én gang, i stedet for mange ganger. Hver utvikler trenger da heller ikke være en ekspert på et hvert regelverk.
-
-For å kunne gjøre dette må det kunne brukes på tvers av mange ulike team, med mange ulike behov og spesialtilfeller. For at det igjen skal være mulig må du ha et par ting
+For å kunne dekke disse behovene må systemet kunne brukes på tvers av mange ulike team, med mange ulike behov og spesialtilfeller. For at det igjen skal være mulig må du ha et par ting:
 
 - Gjenbrukbarhet
 - Konigurerbarhet
 
-- Løse problemer som det tar lang tid å sette seg inn i
+Eller sagt med andre ord, man må finne balansen mellom å være generell og å være spesiell. Det som er fint, er at man egentlig ikke trenger være så veldig spesiell. Her har for eksempel nav funnet en fin balanse når de har laget et ganske bredt sett med breakpoints til responsive design. De har også utviklet en egen type som kan ta inn ulike design tokens basert på hvilken skjermbredde man er på. På den måten sikrer man at man har et felles system å jobbe etter, samtidig som det er ganske mye spillerom for hvert enkelt team. Jeg vil egentlig gå tilbake på min egen påstand om å tilpasse til det spesielle. Det handler heller om å legge til rette for at team og utviklere skal kunne lage sine egne tilpasninger. Hvis systemet legger til rette for dette heller enn å blokkere for det, er man på riktig vei.
 
-  - Universell utforming
-  -
+Et annet fint eksempel på det, er støtte for "as"(finn et skikkelig navn på dette) i komponenter. Med denne teknologien kan man bruke en knapp som en overskrift (h1), dog akkurat dette eksempelet omfavnes neppe av de som lager regelverk for universell utforming. Si noe om typer og ellers hvorfor dette er bra. Gi noen andre eksempler.
+
+### Litt om struktur
+
+- Forklar strukturen i github
+- Generelt mye likt
+
+- CI/CD
+
+### Lover og regler og universell utforming
+
+Å sette seg inn i og holde seg oppdatert på regler og normer innen universell utforming er både tidkrevende. I tillegg er det nok også en ikke ubetydelig andel utviklere som ikke finner det som den mest spennende delen av å utvikle web-sider. Og det er her et designsystem har en av sine virkelige styrker. I et designsystem kan man løse tilgjengelighetsproblemet én gang, i stedet for én gang i hver app. Det gjør også at du må ha færre utviklere som er virkelige eksperter på feltet. Farger og kontraster må likevel hver enkelt utvikler passe på selv. I dokumentasjonen i designsystemet kan man gi forslag til verktøy for å kontrollere at man følger gjeldende standard, og i tillegg ha andre tips, triks og retningslinjer for hvordan det bør/skal/må løses.
+
+### Felles avsender
+
+Noe føles rart når man fra den samme avsenderen får store eller små ulikheter i brukeropplevelsen.
+
+![somethings wrong](../bilder/somethingswrong2.png)
+
+### Verktøy rundt
+
+- Linting (Lint/style-lint)
+- Kommandolinjeverktøy (cli)
+
+---
+
+Mulig annen struktug:
+
+## God brukeropplevelse
+
+### Universell utforming
+
+### Konsistent opplevelse/én avsender
+
+## God utvikleropplevelse
+
+### Intuitivt
+
+### Tidsbesparende
+
+### Konfigurerbart heller enn å dekke alle spesialtilfeller
+
+---
 
 - God
   - Brukeropplevelse (UX)
@@ -84,21 +129,21 @@ I en god utvikleropplevelse ligger mye rart basert på hva den enkelte uvikler l
   - Kommer med universell utforming ut av boksen (kontraster må utvikleren riktignok sørge for selv)
 - Inneholde relevant innhold
   - komponenter og tokens man faktisk har bruk for
-- ## Være customizable(konfigurerbart?), slik at man kan løse sine egne spesialtilfeller, som uunngåelig vil komme opp. Et designsystem kan ikke dekke alle caser (for mye å lage og vedlikeholde, og det ville blitt et salig kaos)
+- Være customizable(konfigurerbart?), slik at man kan løse sine egne spesialtilfeller, som uunngåelig vil komme opp. Et designsystem kan ikke dekke alle caser (for mye å lage og vedlikeholde, og det ville blitt et salig kaos)
 
 Hvordan har Aksel løst å være konfigurerbart?
 
 -
 
-###
-
 ## Konklusjon
 
-Et designsystem gir deg et consistent(norsk?) uttrykk på web-sidene dine, og du slipper å implementere tidkrevende ting som universell utforming på nytt hver gang. Det er jo ikke noe man må ha, men det er ikke dumt å ha heller. Du får også generelle komponenter rett ut av boksen, og kan spare tid på den måten. I tillegg har vi jo alle opplevd at vi gjerne skulle ha dokumentert vår egen kode bedre, både for å forstå valgene, men også noen ganger bare for å forstå.
+Oppsummert virker det som det er de mange små valgene som gjør et godt designsystem godt. De små tingene som sørger for at utviklere kan bruke ting rett ut av boksen, konfigurere, utvide, skape litt mer, tenke litt mindre (eller kanskje heller tenke litt mer på det som gir verdi), gjøre litt mer av det morsomme og gjøre litt mindre av det kjedelige. Resultatet om man gjør det riktig, blir at alle i en organisasjon faktisk kan bruke det samme systemet. Tilbake får du et konsistent design, åpenbart fra én avsender som er intuitivt å bruke og ikke minst tilgjengelig for alle.
+
+Men som enkeltperson da - er det noe vits å lage sitt eget designsystem? Vel, det vil gi deg et konsistent uttrykk på web-sidene dine, om du lager den slags på fritiden, og du slipper å implementere tidkrevende ting som universell utforming på nytt hver gang (om du bryr deg om den slags). Du får også generelle komponenter rett ut av din egen boks, og kan spare tid på den måten. I tillegg har vi jo alle opplevd at vi gjerne skulle ha dokumentert vår egen kode bedre, både for å forstå valgene, men også noen ganger bare for å forstå.
 
 Det korteste veien til mål er nok likevel å bare bruke et av de store komponentbibliotekene som ...(legg inn lenker til et par eksempler her). Resultatet blir noe masseprodusert, men bryr den generelle brukeren seg noe særlig om det? Neppe.
 
-Så burde du lage ditt eget designsystem (yet another yadsy aka yayadsy)? Vel, det som taler mest for det er nok innsikten du får på veien.
+Så det som taler for å lage ditt eget designsystem (yet another yadsy aka yayadsy), er nok mest av alt innsikten du får på veien.
 
 Også er det jo gøy da.
 
@@ -119,6 +164,7 @@ Også er det jo gøy da.
 - Refleksjonene i denne bloggen er basert på refleksjoner og teoretisk kunnskap. Har du erfaringer på hva som egentlig betyr noe? Fyr av en kule i kommentarfeltet.
 - Konsistente mønstre, defaults og navnekonvensjoner er viktig for brukervennlighet. Brukervennlighet er halvparten av poenget (den andre er konsistent brukeropplevelse)
 - UX og DevX er alt. Kjapt og enkelt å bruke for å lage konsistente og brukervennlige web-sider.
+- Rundt fordelene med universell utforming i designsytem: sparer tid, siden man løser et problem én gang, i stedet for mange ganger. Hver utvikler trenger da heller ikke være en ekspert på regelverket. Man kan også ha dokumentasjon av retningslinjer og verktøy beskrevet i designsystemet.
 
 #### Aksel
 
