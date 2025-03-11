@@ -6,42 +6,52 @@ published:
 
 # Designsystem - fra zero til hero
 
-Et par disclaimers: jeg var strengt tatt ikke helt ingenting, eller zero, når jeg begynte denne læringsreisen. Jeg har jobbet med .... . Om jeg er blitt noen hero er også høyst diskutabelt, men at jeg har fått en brukbar forståelse for do's and dont's' på feltet er ikke å tøye strikken.
+Et par disclaimers: jeg var strengt tatt ikke helt ingenting, eller zero, når jeg begynte denne læringsreisen. Jeg har jobbet med og brukt designsystemer tidligere i ulike former og fasonger, men har aldri virkelig godt i dybden på hvilke tanker og valg som inngår i designet av et skikkelig bra designsystem. Om jeg er blitt noen hero er også høyst diskutabelt, men at jeg har fått en brukbar forståelse for do's and dont's' på feltet er ikke å tøye strikken.
 
 Til slutt før vi begynner: hvor ok språkrådet er med at jeg skriver zero til hero på norsk er jeg usikker på, men når Disney kunne gjøre det i sin 1997?-klassiker, Herkules, så må det være greit at også jeg gjør det.
 
 ## Introduksjon (finn en mer catchy tittel?)
 
+### Litt om hva dette ikke er (og er)
+
+Dette er ikke en oppskrift på hvordan man bygger et designsystem. Er du ute etter det, finnes det mange gode inspirasjonskilder der ute, og her er noen av dem:
+
+- [Her](https://storybook.js.org/tutorials/design-systems-for-developers/) har storybook oppsummert veldig mye godt og grunnleggende om hva de mener et designsystem bør være
+- [Her](https://main--66b4b3beb91603ed0ab5c45e.chromatic.com/?path=/docs/docs-getting-started--docs) er portalen til Aksel, NAV sin verktøykasse for produktutvikling, som også inkluderer, (og i stor grad _er_ spør du meg), et designsystem.
+- [Her](https://github.com/johanmha/yadsy) finner du mitt eget quick and dirty oppsett av et minimalt designsystem, yadsy. Det er et godt utgangspunkt med tanke på struktur og CI/CD.
+
+Det denne bloggposten er, er i stedet en samling betraktninger på hva som gjør et godt designsystem til et godt designsystem.
+
 ### Hva snakker vi om her
 
-Ordet designsystem kan strengt tatt brukes om flere ting. I designverden kan det for eksempel være et design satt opp i eksempelvis Figma, som beskriver alt fra de minste bestanddelene som farger og fonter, til grunnkomponenter som knapper og ... til større sammenstillinger som kort, og hele sider.
+Ordet designsystem kan strengt tatt brukes om flere ting. I designverden kan det for eksempel være et design satt opp i eksempelvis Figma, som beskriver alt fra de minste bestanddelene som farger og fonter, til grunnkomponenter som knapper og inputfelter, til større sammenstillinger som kort, og hele sider.
 
 Slik sett er det nært beslektet designsystemet vi snakker om i denne bloggposten: komponentbiblioteket brukt i frontend-utvikling. Det består i følge Storybook av
 
 - design tokens
 - komponenter
-- ... (se på storybook sin definisjon a)
-
-Om du skulle lure på hva Storybook er, så kommer vi tilbake til det om ikke så lenge
+- dokumentasjon
 
 ### Prosessen/Metoden
 
-Begynte med å sette opp mitt eget system uten å tenke noe særlig på hva som er lurt og hva som er skikkelig dumt. Med hjelp av min foretrukne språkmotor kom det opp fort og gæli, og er i dag ute som et konsept-system på NPM. Resultatet ble yadsy (yet another design system), som kan sjekkes opp [her](url).
+Begynte med å sette opp mitt eget system uten å tenke noe særlig på hva som er lurt og hva som er skikkelig dumt. Med hjelp av min foretrukne språkmotor kom det opp fort og gæli, og er i dag ute som et konsept-system på NPM. Resultatet ble yadsy (yet another design system), som kan sjekkes opp [her](https://github.com/johanmha/yadsy).
 
-Deretter undersøkt jeg norske state of the art(finn norsk ord) designsystemer fra [NAV](url) og [Digdir](url). Gått dem etter i sømmene for å forstå hvilke valg de har tatt, hva de har gjort og ikke minst, hva de ikke har gjort.
+Deretter undersøkt jeg norske state of the art(finn norsk ord) designsystemer fra [NAV](https://main--66b4b3beb91603ed0ab5c45e.chromatic.com/?path=/docs/docs-getting-started--docs) og [Digdir](https://www.designsystemet.no/). Jeg har dykket ned i dokumentasjon og kode for å forstå hvilke valg de har tatt, hva de har gjort og ikke minst, hva de ikke har gjort.
 
 Det spennende nå blir å se hva du får når du tenker og grubler på arkitekturen, heller enn å bare kaste noe på veggen og se hva som skjer.
 
 ## Resultater
 
-La oss rydde det mest åpenbare unna veien først: Når det kommer til kjernen av et designsystem, komponenter og tokens, har Aksel _mye_ mer innhold en yadsy. Det er grunnkomponenter for de fleste behov, et stort arsenal av former, farger pluss alt annet av tokens, og også template-layouts? som kan brukes som base for å lage sider med en konsistent utførelse. Dette er kanskje det minst interessante, ettersom det åpenbart er sånn det måtte være. Volum kommer med tid og energi, prøving og feiling av hva som behøves og hvor skoen trykker. Det mer interessant ligger i detaljene.
+La oss rydde det mest åpenbare unna veien først: Når det kommer til kjernen av et designsystem; komponenter og tokens pluss dokumentasjon, har Aksel _mye_ mer innhold en yadsy. Det er grunnkomponenter for de fleste behov, et stort arsenal av former, farger pluss alt annet av tokens, og også template-layouts? som kan brukes som base for å lage sider med en konsistent utførelse. Dette er kanskje det minst interessante funnet, ettersom det åpenbart er sånn det måtte være. Volum kommer med tid og energi, prøving og feiling av hva som behøves og å med tiden finne ut hvor skoen trykker. Det mer interessant ligger i detaljene.
 
-Det er to ting som er kjernen av behovet et designsystem dekker:
+Det er to ting i kjernen av behovet et designsystem dekker:
 
-- Det skal spare tid
-- Det skal sikre konsistent brukeropplevelse
+- Det skal spare tid i utvikling
+- Det skal sikre konsistent og god brukeropplevelse
 
-I tillegg vil kanskje noen argumentere for at det skal sikre overholdelse av krav og regelverk (les: WCAG/universell utforming), men jeg putter dette inn i å spare tid, siden man løser et problem én gang, i stedet for mange ganger. Hver utvikler trenger da heller ikke være en ekspert på et hvert regelverk.
+I tillegg kan man argumentere for at et hovedpunkt er å sikre overholdelse av krav og regelverk (les: WCAG/universell utforming), men jeg tenker dette dekkes av punktene over.
+
+putter dette inn i å spare tid, siden man løser et problem én gang, i stedet for mange ganger. Hver utvikler trenger da heller ikke være en ekspert på et hvert regelverk.
 
 For å kunne gjøre dette må det kunne brukes på tvers av mange ulike team, med mange ulike behov og spesialtilfeller. For at det igjen skal være mulig må du ha et par ting
 
@@ -74,8 +84,7 @@ I en god utvikleropplevelse ligger mye rart basert på hva den enkelte uvikler l
   - Kommer med universell utforming ut av boksen (kontraster må utvikleren riktignok sørge for selv)
 - Inneholde relevant innhold
   - komponenter og tokens man faktisk har bruk for
-- Være customizable(konfigurerbart?), slik at man kan løse sine egne spesialtilfeller, som uunngåelig vil komme opp. Et designsystem kan ikke dekke alle caser (for mye å lage og vedlikeholde, og det ville blitt et salig kaos)
-  -
+- ## Være customizable(konfigurerbart?), slik at man kan løse sine egne spesialtilfeller, som uunngåelig vil komme opp. Et designsystem kan ikke dekke alle caser (for mye å lage og vedlikeholde, og det ville blitt et salig kaos)
 
 Hvordan har Aksel løst å være konfigurerbart?
 
