@@ -32,7 +32,54 @@ Deretter undersøkt jeg norske state of the art(finn norsk ord) designsystemer f
 
 Det spennende nå blir å se hva du får når du tenker og grubler på arkitekturen, heller enn å bare kaste noe på veggen og se hva som skjer.
 
-## Stilstudie
+## Resultater
+
+La oss rydde det mest åpenbare unna veien først: Når det kommer til kjernen av et designsystem, komponenter og tokens, har Aksel _mye_ mer innhold en yadsy. Det er grunnkomponenter for de fleste behov, et stort arsenal av former, farger pluss alt annet av tokens, og også template-layouts? som kan brukes som base for å lage sider med en konsistent utførelse. Dette er kanskje det minst interessante, ettersom det åpenbart er sånn det måtte være. Volum kommer med tid og energi, prøving og feiling av hva som behøves og hvor skoen trykker. Det mer interessant ligger i detaljene.
+
+Det er to ting som er kjernen av behovet et designsystem dekker:
+
+- Det skal spare tid
+- Det skal sikre konsistent brukeropplevelse
+
+I tillegg vil kanskje noen argumentere for at det skal sikre overholdelse av krav og regelverk (les: WCAG/universell utforming), men jeg putter dette inn i å spare tid, siden man løser et problem én gang, i stedet for mange ganger. Hver utvikler trenger da heller ikke være en ekspert på et hvert regelverk.
+
+For å kunne gjøre dette må det kunne brukes på tvers av mange ulike team, med mange ulike behov og spesialtilfeller. For at det igjen skal være mulig må du ha et par ting
+
+- Gjenbrukbarhet
+- Konigurerbarhet
+
+- Løse problemer som det tar lang tid å sette seg inn i
+
+  - Universell utforming
+  -
+
+- God
+  - Brukeropplevelse (UX)
+  - Utvikleropplevelse (DevX)
+
+I en god brukeropplevelse ligger
+
+- mulig å bruke (universelt utformet)
+- Enkelt å bruke
+- Konsistent opplevelse - Alt oppleves å komme fra én avsender
+
+I en god utvikleropplevelse ligger mye rart basert på hva den enkelte uvikler liker, men noen ting er:
+
+- Det skal være enkelt å bruke/være intuitivt i bruk
+  - Gi mening sammenlignet med stanadarden (utvide klasser?/typer/elementer som allerede eksisterer (button, link, osv))
+  - Ha navngiving og typer som gir intuitivt mening og er konsistent på tvers av systemet
+  - Ikke bli for komplekst (farger(eller var det tokens) delt opp i bare to typer, ikke flere. Ikke ha for mange inndelinger av størrelser (atomer, molekyler osv) - det gjør ofte ting bare mer rotete og vanskeligere å vite hvor ting skal være).
+- Være tidsbesparende (Hvordan er det tidsbesparende?)
+  - Aksel har støtte i komponentene for ulike tokens til ulike skjermstørrelser. (innebygd støtte for responsivt design)
+  - Kommer med universell utforming ut av boksen (kontraster må utvikleren riktignok sørge for selv)
+- Inneholde relevant innhold
+  - komponenter og tokens man faktisk har bruk for
+- Være customizable(konfigurerbart?), slik at man kan løse sine egne spesialtilfeller, som uunngåelig vil komme opp. Et designsystem kan ikke dekke alle caser (for mye å lage og vedlikeholde, og det ville blitt et salig kaos)
+  -
+
+Hvordan har Aksel løst å være konfigurerbart?
+
+-
 
 ###
 
