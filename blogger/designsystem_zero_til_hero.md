@@ -10,10 +10,6 @@ Et par disclaimers: jeg var strengt tatt ikke helt ingenting, eller zero, når j
 
 Til slutt før vi begynner: hvor ok språkrådet er med at jeg skriver zero til hero på norsk er jeg usikker på, men når Disney kunne gjøre det i sin 1997-klassiker, Herkules, så må det være greit at også jeg gjør det.
 
-## TLDR
-
-Dårlig tid? Ingen lesehest? Hopp rett til [konklusjonen](#konklusjon).
-
 ## Introduksjon
 
 ### Litt om hva dette ikke er (og er)
