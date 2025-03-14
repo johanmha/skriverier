@@ -59,7 +59,11 @@ Først ser vi på punkt nummer 1: hvordan et designsystem kan spare tid.
 
 ### Dokumentasjon
 
-Tydelig dokumentasjon er essensielt for bred adopsjon. Det må være enkelt å forstå hvordan man bruker komponenter, styler dem, setter opp temaer, osv., ellers lager man dem heller selv. Her kommer [Storybook](https://storybook.js.org/) inn. Gjennom [stories](https://storybook.js.org/docs/writing-stories) kan du vise frem til utvikleren hvordan en komponent skal brukes, og settes opp eksempler på ulike scenarioer. Jeg liker særlig godt hvordan Designsystemet har laget en egen docs for hver enkelt komponent, som gir en overordnet historie om hvordan den skal brukes. Dette er lettlest og forståelig, og samler mye kunnskap på én side. [Her, eksempelvis fra knappen deres](https://storybook.designsystemet.no/?path=/docs/komponenter-button--docs).
+Tydelig dokumentasjon er essensielt for bred adopsjon. Det må være enkelt å forstå hvordan man bruker komponenter, styler dem, setter opp temaer, osv., ellers lager man dem heller selv. Dette fungerer heller ikke:
+
+![I am the documentation](../bilder/iamdocumentation.jpg)
+
+Her kommer [Storybook](https://storybook.js.org/) inn. Gjennom [stories](https://storybook.js.org/docs/writing-stories) kan du vise frem til utvikleren hvordan en komponent skal brukes, og settes opp eksempler på ulike scenarioer. Jeg liker særlig godt hvordan Designsystemet har laget en egen docs for hver enkelt komponent, som gir en overordnet historie om hvordan den skal brukes. Dette er lettlest og forståelig, og samler mye kunnskap på én side. [Her, eksempelvis fra knappen deres](https://storybook.designsystemet.no/?path=/docs/komponenter-button--docs).
 
 Det er også naturlig å legge inn overordnet dokumentasjon om saker som bruk og beste praksiser i Storybook. Her har dog både Nav og Digdir tatt det et steg lenger, og laget sine egne web-sider med et stort økosystem av dokumentasjon. Hos [Designsystemet](https://www.designsystemet.no) finner du kom-i-gang-informasjon for både [designere](https://www.designsystemet.no/grunnleggende/for-designere/kom-i-gang), og [utviklere](https://www.designsystemet.no/grunnleggende/for-designere/kom-i-gang), samt [god praksis](https://www.designsystemet.no/god-praksis). Nav er ikke noe dårligere og har blant annet sin [blogg](https://aksel.nav.no/produktbloggen) med erfaringer, kunnskap og oppdateringer.
 
@@ -74,7 +78,7 @@ For å kunne dekke behovet for å spare tid i utviklingen, må det også faktisk
 
 Under dette må man blant annet finne balansen mellom å være generell og å være spesiell. Her har for eksempel Aksel funnet en fin balanse når de har laget et standardisert sett med breakpoints til responsive design. De har også utviklet en egen type som kan ta inn ulike design tokens basert på hvilken skjermbredde man er på. På den måten sikrer man at man har et felles system å jobbe etter, samtidig som det er ganske mye spillerom for hvert enkelt team. Hvis noen absolutt må ha noe utenfor dette settet, så kan man alltids lage sitt eget breakpoint med sin egne regler. På denne måten er det både gjenbrukbart rett ut av boksen, samtidig som det ikke blokkerer for spesielle konfigureringer.
 
-Et annet eksempel på å gjøre komponenter konfigurerbare er polymorfi. Hva er det? Kort fortalt at du kan endre hvilket html-element en komponent rendres ut som. Det klassiske eksempelet er å bruke en Button-komponent som en lenke, fordi du vil bruke noe som ser ut som en knapp til å navigere til en ny side. Det bedrer universell utforming, ettersom <a> er semantisk korrekt element for oppgaven. Det kunne for eksempel vært slik
+Et annet eksempel på å gjøre komponenter konfigurerbare er polymorfi. Hva er det? Kort fortalt at du kan endre hvilket html-element en komponent rendres ut som. Det klassiske eksempelet er å bruke en Button-komponent som en lenke, fordi du vil bruke noe som ser ut som en knapp til å navigere til en ny side. Det bedrer universell utforming, ettersom en href er semantisk korrekt element for oppgaven. Det kunne for eksempel vært slik
 
 ```jsx
 <Button as="a" href="/kontakt-oss" variant="primary">
@@ -90,7 +94,7 @@ i stedet for slik
 </Button>
 ```
 
-[Designsystemet støtter dette](https://www.designsystemet.no/grunnleggende/for-utviklere/komposisjon) med asChild gjennom [Radix sin Slot-komponent], mens Aksel gjør det med sin egen [OverridableComponent](https://aksel.nav.no/grunnleggende/kode/overridablecomponent). Felles for de begge er at de sikrer typesikkerhet for komponenten, i motsetning til hva du får med enklere implementasjoner.
+Designsystemet støtter dette med [asChild](https://www.designsystemet.no/grunnleggende/for-utviklere/komposisjon) gjennom [Radix sin Slot-komponent](https://www.radix-ui.com/primitives/docs/utilities/slot), mens Aksel gjør det med sin egen [OverridableComponent](https://aksel.nav.no/grunnleggende/kode/overridablecomponent). Felles for de begge er at de sikrer typesikkerhet for komponenten, i motsetning til hva du får med enklere implementasjoner.
 
 Som et siste notis, er det å finne balansen på dette feltet antakelig det aller vanskeligste i et designsystem. Blir det for generelt er det ikke brukbart. Blir det fort spesielt blir det kaos både å bruke og vedlikeholde. Blir det for konfigurerbart risikerer du at utviklere gjør ting de ikke burde, og ødelegger opplevelsen av _et_ budskap fra _én_ avsender. Det er her håndverk og erfaring virkelig kommer til sin rett.
 
@@ -190,110 +194,3 @@ Så det som taler for å lage ditt eget designsystem (yet another yadsy aka yaya
 ![friends along the way](../bilder/friendsalongtheway.gif)
 
 Også er det jo gøy da.
-
-### Notater til meg selv
-
-- Storybook
-  - Noe om systemene rundt Storybook
-- WEB-components vs React og slikt må undersøkes
-- Undersøke valg av css (module, inline, tailwind, etc.)
-- Navngiving er essensielt så det er forståelig i bruk (se designtokens/farger)
-- Et designsystem er ikke bare komponenter og tokens. I en organisasjon som ønsker et helhetlig visuelt uttrykk er det kanskje enda viktigere med regler for hvordan det skal brukes/dokumentasjon. Konsistent bruk/forklaring av bruk er også essensielt for å sikre at minst mulig brekker ved oppdatering av pakker. Eksempel: interne komponent-tokens (--ac-...)
-- Opplever at den store forskjellen er dokumentasjon og verktøy som lint og cli. Dette sørger for (enforcer (hva er det på norsk?)) at bruken er korrekt. Eksempel: style-lint (https://aksel.nav.no/grunnleggende/kode/stylelint). Dette er særlig viktig for større organisasjoner, men selv om man bare bruker sitt eget designsystem selv, så vet man jo at man kan glemme valg man har gjort og hvordan ting skal gjøres. Lint fungerer også som dokumentasjon.
-- Når er det nyttig å lage et designsystem? I hvilken skala er det nyttig? Kan det være nyttig for en selv? Er det bedre å bruke store designsystem fra npm? Fordeler og ulemper?
-- Hvis man har et design i Figma, så skulle man tro det ganske kjapt kan være nyttig å implementere det som et designsystem?
-- Hovedpoeng med et designsystem er å spare tid i implementasjon og å sikre en konsistent brukeropplevelse. (Flere ting?). Hvilke ting er det mest tid å spare på? Når er en organisasjon stor nok til at man sparer inn tid på å bygge og vedlikeholde et designsystem?
-- WCAG/UU er komplekst å sette seg inn i. Å sikre dette vil kunne være effektivt gjennom et designsystem (noen ting som kontraster må brukeren selv sørge for. Må bruke verktøy for å verifisere kontraster)
-- Fleksibilitet er essensielt for at et bibliotek skal være brukbart, siden alle/mange vil ha sine egne spesialtilfeller som det ikke er mulig/ønskelig/for ressurskrevende å dekke opp for. Dermed må det være rom for å endre/fleksibilitet for å sikre bred adopsjon.
-- Refleksjonene i denne bloggen er basert på refleksjoner og teoretisk kunnskap. Har du erfaringer på hva som egentlig betyr noe? Fyr av en kule i kommentarfeltet.
-- Konsistente mønstre, defaults og navnekonvensjoner er viktig for brukervennlighet. Brukervennlighet er halvparten av poenget (den andre er konsistent brukeropplevelse)
-- UX og DevX er alt. Kjapt og enkelt å bruke for å lage konsistente og brukervennlige web-sider.
-- Rundt fordelene med universell utforming i designsytem: sparer tid, siden man løser et problem én gang, i stedet for mange ganger. Hver utvikler trenger da heller ikke være en ekspert på regelverket. Man kan også ha dokumentasjon av retningslinjer og verktøy beskrevet i designsystemet.
-
-#### Aksel
-
-- god, gammaldags CSS, og å ta i bruk CSS modules for å få isolasjon av stiler per komponent.
-- API: Alle komponentene er implementert med React forwardRef. Dette lar deg sende en ref som prop dersom du ønsker egen logikk på DOM-elementet. (Smart å tenke på hvordan ting kan være customizable, slik at det ikke blir for mange spesialtifeller som ikke fungerer)
-- De fleste komponenter utvider typen til det underliggende HTML-elementet de benytter. Flere komponenter bruker også OverridableComponent. (Antakelig nyttig av flere grunner, men mest sannsynlig fordi da utnytter man kjente og dokumenterte
-  standarder) (https://aksel.nav.no/grunnleggende/kode/overridablecomponent)
-  - Flere av komponentene i Aksel er implementert med OverridableComponent. Dette API-et gjør det enkelt å overstyre hvilken komponent eller tag som komponenten rendres med.
-- Komponentstyling er ikke integrert i React-koden. Du må selv importere @navikt/ds-css i prosjektet ditt manuelt. Stylingen er ikke auto-prefikset, så det er deres ansvar å løse dette ved hjelp av f.eks. PostCSS og Autoprefikser. De fleste bundlere løser dette for deg. (Dette er verdt å undersøke og forstå - tror det er ulikt til hvordan jeg har gjort det. Hvorfor?)
-- Vi anbefaler alle å ta i bruk stylelint-konfigurasjonen vår. Den sikrer at tokens og styling fra Aksel fungerer som forventet. (Dette er smart og et grep jeg ikke har tatt - kan utvides når man finner måter å brekke koden på)
-- Fonten vi benytter blir lastet fra CDN, slik at du må gjøre noen tilpasninger i løsningen din. (Dette er ulikt. Hvorfor har man gjort valget?)
-- Ikonpakken vår inneholder totalt 800+ ikoner i stroke- og fill-versjon. Disse kan benyttes som separate React-komponenter eller direkte som SVG-er etter behov. (smart å ha dem både som svg og react-komponenter. Hva er fordelen med det?)
-- Standard bredde og høyde på ikonene er satt til 1em for å gjøre det enkelt å plassere ikonene inline med tekst. Vi anbefaler hovedsakelig å bruke 24px der det er mulig, da ikonene er designet for denne størrelsen. (Smarte valg)
-- Vi anbefaler også å bruke title-attributtet der det er mulig, fremfor aria-label, ettersom dette gir en bedre opplevelse for skjermleserbrukere. (UU-tanker
-  )
-- Bruke Figma for å utvikle design. "Disse bibliotekene sikrer at løsningene våre er universelt utformet, konsistente og effektive å utvikle."
-- Versjonering av figmakomponenter, siden endringer av design/komponenter i Figma ikke har noen innebygd versjonering (med tanke på å bruke figma-komponenter i figma. Les mer: https://aksel.nav.no/grunnleggende/introduksjon/versjonering-i-figma)
-
-Design tokens: (https://aksel.nav.no/grunnleggende/introduksjon/versjonering-i-figma, https://aksel.nav.no/grunnleggende/styling/design-tokens)
-
-- Har graderinger av alle hovedfargene (rødt, blått, grønt osv.)
-- Har et par hovedfarger (navrødt, hvit, transparent)
-- Har gradering av semantiske farger (tilstandsfarger?/ting som skal si noe?) (action, success, danger) Basert på interaksjon og grad stort sett (hover/active, subtle, moderate)
-- Har farger til tekst, ikoner, border, datavisualisering
-- De har fonter med tokennavn som i yadsy (0, 1, 2, 3 osv.). Må finne ut av bakgrunnen for at man gjør det slik, og hva som er logikken om det er noen
-- et godt system for navngiving av tokens. Eks: --a-data-surface-6-subtle, --a-nav-red, --a-z-index-popover. Hvorfor har man a først? Hva er navnet på det? (pre-etellerannet?) Antakelig for at det ikke skal bli rot med andre css-variabler fra andre systemer. Hva er navnet på når det blir rot?
-- Støtte for ulike css-implementasjoner (er dette riktig ordbruk? Tviler) css, sass, less, js(styled comonents)
-- tokens for breakpoints og regler for hvordan de skal brukes (mobile firest, desktop first - https://aksel.nav.no/grunnleggende/styling/brekkpunkter)
-
-Farger: (https://aksel.nav.no/grunnleggende/styling/farger)
-
-- Hovedprinsipp: enkelt så det kan brukes av mange team
-- Delt i semantiske og globale farger (blue-500 vs text.action)
-  - Spørsmål: hvor kommer konvensjonen med 300, 400, 500 osv fra?
-  - Spørsmål: hvorfor er det blue-500 vs text.action? Er det fordi blue-500 er en ting, med bindestrek i stedet for mellomrom, mens text.action er noe annet (finne ikke en god beskrivelse)
-    - Delvis svar: semantiske navn er bygget opp av 3 ledd: UI-element . Situasjon . Variant/Tilstand.
-- «Semantisk» betyr bare at farger navngis etter bruk og funksjon.
-- Selv om de er spesifikke, skal de semantiske fargene være fleksible sånn at de passer produktteamenes situasjoner. Bruk av semantiske farger vil dessuten gjøre oss i stand til å justere innstillinger som dark mode og høykontrast.
-  - Dette legger til rette for fleksibilitet og temaer
-- Fargetema: Det er mulig for deg å tilby fargetemaer om du bruker semantiske fargenavn i hele tjenesten din. Du endrer ikke på det semantiske fargenavnet som brukes i frontend når noen bytter tema. Du bytter heller ut de globale fargene som de semantiske fargene refererer til. Per nå er dette en teknisk mulighet. Det vil si at det ikke er designet en palett til dark mode eller høykontrast. Fargetema er teknisk forklart på denne siden.
-
-Typografi: (https://aksel.nav.no/grunnleggende/styling/typografi)
-
-- lesbar font
-- linjelengde
-- definerte størrelser
-- til ulike situasjoner (label, detail, body osv.)
-
-Lint (style-lint: https://aksel.nav.no/grunnleggende/kode/stylelint)
-Sjekker
-
-- At man ikke bruker ikke-eksisterende tokens
-
-Tailwind CSS + Aksel
-
-- Ved å legge Aksel i layer(components) , vil utilities som mb-4 kunne overskrive styling fra Aksel.
-  Sjekk opp:
-
-- CSS-Imports: (https://aksel.nav.no/grunnleggende/kode/css-import) Bruk kommandolinje-verktøyet vårt til å håndtere CSS import i løsningen din. Da blir cascading + mye mer håndtert for deg!
-  - grav i hva dette innebærer: cascading + mye mer håndtert for deg
-    - Delvis svar er her i docs for layers (https://developer.mozilla.org/en-US/docs/Web/CSS/@layer)
-    -
-
-layout-primitives (https://aksel.nav.no/grunnleggende/kode/layout-primitives)
-
-- Primitives gjør det enklere å bygge layout som følger de samme konseptene og brekkpunktene, uten å måtte skrive noe egen CSS. Dette gjør det lettere å bygge responsive løsninger som fungerer likt på tvers av ulike apper.
-- Som Page, HGrid og Box
-
----
-
-Notater om god utvikleropplevelse
-
-I en god utvikleropplevelse ligger mye rart basert på hva den enkelte uvikler liker, men noen ting er:
-
-- Det skal være enkelt å bruke/være intuitivt i bruk
-  - Gi mening sammenlignet med stanadarden (utvide klasser?/typer/elementer som allerede eksisterer (button, link, osv))
-  - Ha navngiving og typer som gir intuitivt mening og er konsistent på tvers av systemet
-  - Ikke bli for komplekst (farger(eller var det tokens) delt opp i bare to typer, ikke flere. Ikke ha for mange inndelinger av størrelser (atomer, molekyler osv) - det gjør ofte ting bare mer rotete og vanskeligere å vite hvor ting skal være).
-- Være tidsbesparende (Hvordan er det tidsbesparende?)
-  - Aksel har støtte i komponentene for ulike tokens til ulike skjermstørrelser. (innebygd støtte for responsivt design)
-  - Kommer med universell utforming ut av boksen (kontraster må utvikleren riktignok sørge for selv)
-- Inneholde relevant innhold
-  - komponenter og tokens man faktisk har bruk for
-- Være customizable(konfigurerbart?), slik at man kan løse sine egne spesialtilfeller, som uunngåelig vil komme opp. Et designsystem kan ikke dekke alle caser (for mye å lage og vedlikeholde, og det ville blitt et salig kaos)
-
-Hvordan har Aksel løst å være konfigurerbart?
-
----
