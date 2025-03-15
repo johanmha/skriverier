@@ -57,6 +57,37 @@ Derfor skal vi i de kommende seksjonene se på hvilke metoder og valg som er gjo
 
 Først ser vi på punkt nummer 1: hvordan et designsystem kan spare tid.
 
+### Gode hjelpere
+
+Noen ord om gode verktøy som vil spare tid i utvikling, vedlikehold og bruk av et designsystem.
+
+#### [Storybook](https://storybook.js.org/)
+
+En slags de facto standard i bygging av designsystem. Navet i designsystemet (pun intended), med funksjonalitet for dokumentasjon og testing.
+
+#### [Chromatic](https://www.chromatic.com/)
+
+Også en slags de facto standard, men for visuell testing av komponentene i et designsystem. Står litt mer om det [lenger nede her](#så-enkelt-som-mulig-å-vedlikeholde).
+
+#### Typescript
+
+Typescript hjelper både i bygging og bruk av et designsystem. I både Aksel og Designsystemet støtter det utvikling og bruk gjennom blant annet å gi IDE-funksjonalitet, sikre konsistent bruk, trygge vedlikehold og som levende dokumentasjon av koden.
+
+#### Kommandolinjeverktøy (CLI fra nå av)
+
+Et CLI kan hjelpe utviklere i bruk av designsystemet. [Aksel inkluderer et](https://aksel.nav.no/grunnleggende/kode/kommandolinje) som blant annet kan hjelpe deg med å automigrere mellom major-versjoner. [Designsystemet har et](https://www.npmjs.com/package/@digdir/designsystemet) som for eksempel hjelper deg å lage nye temaer.
+
+#### Linting (lint/style-lint)
+
+Håndhever at utviklere bruker designsystemet som tilsiktet. Snakker litt mer om stylelint under [god brukeropplevelse](#felles-avsender). Hverken Designsystemet eller Aksel har en standard linter (Aksel har style-linter). Hvorfor er jeg ikke sikker på, men kan være
+
+- det er for mye styr å få til noe som gir verdi på tvers av mange team
+- man ikke har kommet seg så langt
+- typescript gjør nok
+- det bare er en dum idé 🤷🏼‍♂️
+
+Del gjerne om du har mer innsikt på akkurat det.
+
 ### Dokumentasjon
 
 Tydelig dokumentasjon er essensielt for bred adopsjon. Det må være enkelt å forstå hvordan man bruker komponenter, styler dem, setter opp temaer, osv., ellers lager man dem heller selv. Dette fungerer heller ikke:
@@ -98,29 +129,13 @@ Designsystemet støtter dette med [asChild](https://www.designsystemet.no/grunnl
 
 Som et siste notis, er det å finne balansen på dette feltet antakelig det aller vanskeligste i et designsystem. Blir det for generelt er det ikke brukbart. Blir det fort spesielt blir det kaos både å bruke og vedlikeholde. Blir det for konfigurerbart risikerer du at utviklere gjør ting de ikke burde, og ødelegger opplevelsen av _et_ budskap fra _én_ avsender. Det er her håndverk og erfaring virkelig kommer til sin rett.
 
-### Gode hjelpere
-
-Si noe om støtteverktøyene som er inkludert i Designsystemet og Aksel
-
-- CLI
-- linting (lint/style-lint)
-- temabygger
-
-Si noe om typescript og hvordan det hjelper utviklerne som bruker systemet
-
-- forlengelse av typene til grunnleggende html-elementer
--
-
 ### Så enkelt som mulig å vedlikeholde
 
 Desto mer du har og desto mer komplekst det er, desto mer krever det å vedlikeholde. Et designsystem er ikke et unntak fra denne regelen. En ting er å balansere støtte for konfigurerbarhet og spesialtilfeller opp mot kompleksiteten du får på kjøpet. Et annet moment er å gjøre det enklest mulig å fange feil som introduseres. Da er tester verktøyet. Automatiske enhetstester kan og bør brukes, men også visuelle tester kan ha stor verdi.
 
-Årsaken er at automatiske tester ikke kan fange opp alt som kan gå galt med en komponent i alle sine tilstander. Å ha det som mål ville være både tidkrevende å implementere og i tillegg føre med seg sin egen kompleksitet. [Chromatic](), et mye brukt visuelt testverktøy, baserer seg på snapshots? av eksempelvis en komponents samlede tilstander. Dette blir generert når kode er oppdater, og det sjekkes automatisk om noe er endret. Om noe er endret fra forrige snapshot til dette, varsles mennesket i loopen, og man kan ta stilling til om dette er endring som forventet. Dette er implementert i både
+Årsaken er at automatiske tester ikke kan fange opp alt som kan gå galt med en komponent i alle sine tilstander. Å ha det som mål ville være både tidkrevende å implementere og i tillegg føre med seg sin egen kompleksitet. [Chromatic](https://www.chromatic.com/), et mye brukt visuelt testverktøy, baserer seg på snapshots av eksempelvis en komponents samlede tilstander. Dette blir generert når kode er oppdater, og det sjekkes automatisk om noe er endret. Om noe er endret fra forrige snapshot til dette, varsles mennesket i loopen, og man kan ta stilling til om dette er endring som forventet. Dette er for eksempel implementert i Designsystemet, og et oppsett kan se ut som [dette for Button-komponenten.](https://github.com/digdir/designsystemet/blob/next/packages/react/src/components/Button/Button.chromatic.tsx).
 
-- Tester
-  - Enhetstester
-  - Visuelle tester (Chromatic)
-  - Storybook?
+En annen essensiell bit av et vedlikeholdbart designsystem er typescript. Vi går ikke noe nærmere inn på alle fordelene med typescript her, annet enn det jeg [oppsummerte kort over her](#typescript). Du kan eventuelt grave litt i [denne](https://github.com/navikt/aksel/blob/main/%40navikt/core/react/src/button/Button.tsx) eller [denne](https://github.com/digdir/designsystemet/blob/next/packages/react/src/components/Button/Button.tsx) koden om du er nysgjerrig.
 
 ### Lover og regler og universell utforming
 
