@@ -86,7 +86,7 @@ Et CLI kan hjelpe utviklere i bruk av designsystemet. [Aksel inkluderer et](http
 
 #### Linting (lint/style-lint)
 
-Håndhever at utviklere bruker designsystemet som tilsiktet. Snakker litt mer om stylelint under [god brukeropplevelse](#felles-avsender). Hverken Designsystemet eller Aksel har en standard linter (Aksel har style-linter). Hvorfor er jeg ikke sikker på, men kan være
+Håndhever at utviklere bruker designsystemet som tilsiktet. Snakker litt mer om style-lint under [god brukeropplevelse](#felles-avsender). Hverken Designsystemet eller Aksel har en standard linter (Aksel har style-linter). Hvorfor er jeg ikke sikker på, men kan være
 
 - det er for mye styr å få til noe som gir verdi på tvers av mange team
 - man ikke har kommet seg så langt
