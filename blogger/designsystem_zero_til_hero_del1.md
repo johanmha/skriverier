@@ -6,9 +6,9 @@ published:
 
 # Designsystem - fra zero til hero
 
-Et par disclaimers: jeg var strengt tatt ikke helt ingenting, eller zero, når jeg begynte denne læringsreisen. Jeg har jobbet med og brukt designsystemer tidligere i ulike former og fasonger, men har aldri virkelig gått i dybden på hvilke tanker og valg som inngår i designet av et skikkelig bra designsystem. Om jeg er blitt noen hero er også høyst diskutabelt, men at jeg har fått en brukbar forståelse for do's and dont's' på feltet er ikke å tøye strikken.
+Et par disclaimers: jeg var strengt tatt ikke helt ingenting, eller zero, da jeg begynte denne læringsreisen. Jeg har jobbet med og brukt designsystemer tidligere i ulike former og fasonger, men har aldri virkelig gått i dybden på hvilke tanker og valg som inngår i designet av et skikkelig bra designsystem. Om jeg er blitt noen hero er også høyst diskutabelt, men at jeg har fått en brukbar forståelse for dos and dont's på feltet er ikke å tøye strikken.
 
-Til slutt før vi begynner: hvor ok språkrådet er med at jeg skriver zero til hero på norsk er jeg usikker på, men når Disney kunne gjøre det i sin 1997-klassiker, Herkules, så må det være greit at også jeg gjør det.
+Til slutt før vi begynner: hvor ok Språkrådet er med at jeg skriver "zero til hero" i en ellers norsk tekst er jeg usikker på, men når Disney kunne gjøre det i sin 1997-klassiker, Herkules, så må det være greit at også jeg gjør det.
 
 ![Fra zero til hero](../bilder/zerotilhero.gif)
 
@@ -18,30 +18,30 @@ Til slutt før vi begynner: hvor ok språkrådet er med at jeg skriver zero til 
 
 Dette er ikke en oppskrift på hvordan man bygger et designsystem. Er du ute etter det, finnes det mange gode inspirasjonskilder der ute, og her er noen av dem:
 
-- [Her](https://storybook.js.org/tutorials/design-systems-for-developers/) har storybook oppsummert veldig mye godt og grunnleggende om hva de mener et designsystem bør være
-- [Her](https://main--66b4b3beb91603ed0ab5c45e.chromatic.com/?path=/docs/docs-getting-started--docs) er portalen til Aksel, NAV sin verktøykasse for produktutvikling, som også inkluderer, (og i stor grad _er_ spør du meg), et designsystem.
+- [Her](https://storybook.js.org/tutorials/design-systems-for-developers/) har Storybook oppsummert veldig mye godt og grunnleggende om hva de mener et designsystem bør være
+- [Her](https://main--66b4b3beb91603ed0ab5c45e.chromatic.com/?path=/docs/docs-getting-started--docs) er portalen til Aksel, Nav sin verktøykasse for produktutvikling, som også inkluderer, (og i stor grad _er_ spør du meg), et designsystem.
 - [Her](<(https://www.designsystemet.no/)>) har du Designsystemet fra Digdir.
-- [Her](https://github.com/johanmha/yadsy) finner du mitt eget quick and dirty oppsett av et minimalt designsystem, yadsy. Det er et godt utgangspunkt med tanke på struktur og CI/CD.
+- [Her](https://github.com/johanmha/yadsy) finner du mitt eget quick and dirty-oppsett av et minimalt designsystem, yadsy. Det er et godt utgangspunkt med tanke på struktur og CI/CD.
 
 Det denne bloggserien i to deler er, er i stedet en samling betraktninger på hva som gjør et godt designsystem til et godt designsystem.
 
 ### Hva snakker vi om
 
-Ordet designsystem kan strengt tatt brukes om flere ting. I designverden kan det for eksempel være et design satt opp i eksempelvis Figma, som beskriver alt fra de minste bestanddelene som farger og fonter, til grunnkomponenter som knapper og inputfelter, til større sammenstillinger som kort, og hele sider.
+Ordet designsystem kan strengt tatt brukes om flere ting. I designverdenen kan det for eksempel være et design satt opp i eksempelvis Figma, som beskriver alt fra de minste bestanddelene som farger og fonter, til grunnkomponenter som knapper og input-felter/inndatafelter, til større sammenstillinger som kort, og hele sider.
 
 Slik sett er det nært beslektet designsystemet vi snakker om i denne bloggserien: designsystemet brukt i frontend-utvikling. [Det består i følge Storybook av](https://storybook.js.org/tutorials/design-systems-for-developers/react/en/introduction/)
 
 - komponenter
 - design tokens
-- dokumentasjon.
+- dokumentasjon
 
-Man kan også se totalen av designets spesifikasjon i figma og designsystemet som et designsystem, og et designsystem vil i alle tilfeller ofte bygge på et design(system) i nettopp Figma. Som vanlig er språket ikke uten sine dobbeltbetydninger og usikkerheter. I denne bloggserien er et designsystem herfra og ut brukt for å beskrive ca det som Storybook definerer et designsystem som. I tilfellet for Aksel fra NAV og Designsystemet fra Digdir, brukes det om det totale systemet, selv om det også er upresist på alle slags måter. Men jaja, det bør være tålelig forståelig utifra konteksten.
+Man kan også se totalen av designets spesifikasjon i Figma og designsystemet som et designsystem, og et designsystem vil i alle tilfeller ofte bygge på et design(system) i nettopp Figma. Som vanlig er språket ikke uten sine dobbeltbetydninger og usikkerheter. I denne bloggserien er et designsystem herfra og ut brukt for å beskrive ca det som Storybook definerer et designsystem som. I tilfellet for Aksel fra Nav og Designsystemet fra Digdir, brukes det om det totale systemet, selv om det også er upresist på alle slags måter. Men jaja, det bør være tålelig forståelig utifra konteksten.
 
 ### Prosessen
 
-Jeg begynte med å sette opp mitt eget system uten å tenke noe særlig på hva som er lurt og hva som er skikkelig dumt. Med hjelp av min foretrukne språkmotor kom det opp fort og gæli, og er i dag ute som et konsept-system på NPM. Resultatet ble yadsy (yet another design system), som kan sjekkes opp [her](https://github.com/johanmha/yadsy).
+Jeg begynte med å sette opp mitt eget system uten å tenke noe særlig på hva som er lurt og hva som er skikkelig dumt. Med hjelp av min foretrukne språkmotor kom det opp fort og gæli, og er i dag ute som et konseptsystem på NPM. Resultatet ble yadsy (yet another design system), som kan sjekkes opp [her](https://github.com/johanmha/yadsy).
 
-Deretter undersøkt jeg norske state-of-the-art designsystemer fra [NAV](https://main--66b4b3beb91603ed0ab5c45e.chromatic.com/?path=/docs/docs-getting-started--docs) og [Digdir](https://www.designsystemet.no/). Jeg har dykket ned i dokumentasjon og kode for å forstå hvilke valg de har tatt, hva de har gjort, og hva de ikke har gjort.
+Deretter undersøkte jeg norske state-of-the-art designsystemer fra [Nav](https://main--66b4b3beb91603ed0ab5c45e.chromatic.com/?path=/docs/docs-getting-started--docs) og [Digdir](https://www.designsystemet.no/). Jeg har dykket ned i dokumentasjon og kode for å forstå hvilke valg de har tatt, hva de har gjort, og hva de ikke har gjort.
 
 ![State of the art](../bilder/stateoftheart.gif)
 
@@ -52,9 +52,9 @@ Med basis i mitt eget enkle system, har jeg dermed kunnet se hva du får når du
 Det er i hovedsak to behov et designsystem dekker:
 
 1. Det skal spare tid
-2. Det skal sikre konsistent og god brukeropplevelse.
+2. Det skal sikre konsistent og god brukeropplevelse
 
-I tillegg kan man argumentere for at et hovedpunkt er å sikre overholdelse av krav og regelverk (les: WCAG/universell utforming). Jeg har dyttet det inn under brukeropplevelse, men det kunne vært under begge.
+I tillegg kan man argumentere for at et hovedpunkt er å sikre overholdelse av krav og regelverk (les: WCAG / universell utforming). Jeg har dyttet det inn under brukeropplevelse, men det kunne vært under begge.
 
 I resten av bloggserien skal vi se på hvilke metoder og valg som kan gjøres for å dekke de to grunnbehovene.
 
@@ -70,11 +70,11 @@ Noen ord om gode verktøy som vil spare tid i utvikling, vedlikehold og bruk av 
 
 #### Storybook
 
-En slags de facto standard i bygging av designsystem. Navet i designsystemet (pun intended), med funksjonalitet for dokumentasjon og testing. [Her](https://storybook.js.org/) er landingssiden deres om du er for lat til å søke.
+En slags de facto-standard i bygging av designsystem. Navet i designsystemet (pun intended), med funksjonalitet for dokumentasjon og testing. [Her](https://storybook.js.org/) er landingssiden deres om du er for lat til å søke.
 
 #### Chromatic
 
-[Chromatic](https://www.chromatic.com/) er også en slags de facto standard, men for visuell testing av komponentene i et designsystem. Står litt mer om det [lenger nede her](#så-enkelt-som-mulig-å-vedlikeholde).
+[Chromatic](https://www.chromatic.com/) er også en slags de facto-standard, men for visuell testing av komponentene i et designsystem. Står litt mer om det [lenger nede her](#så-enkelt-som-mulig-å-vedlikeholde).
 
 #### TypeScript
 
@@ -107,16 +107,16 @@ Det er også naturlig å legge inn overordnet dokumentasjon om saker som bruk og
 
 Det er ingen overdrivelse å si at Designsystemet og Aksel tar sin dokumentasjon alvorlig, og det er nok et hint om viktigheten av den.
 
-### Gjennbrukbart og konfigurerbart
+### Gjenbrukbart og konfigurerbart
 
-For at et designsystem skal kunne spare tid for utviklere, må det også faktisk brukes utviklere. Da må det være brukbart på tvers av mange ulike team, med mange ulike behov og spesialtilfeller, og med mange utviklere som skal ha en god utvikleropplevelse. For at det skal være mulig må du ha flere ting, blant annet:
+For at et designsystem skal kunne spare tid for utviklere, må det også faktisk brukes av utviklere. Da må det være brukbart på tvers av mange ulike team, med mange ulike behov og spesialtilfeller, og med mange utviklere som skal ha en god utvikleropplevelse. For at det skal være mulig må du ha flere ting, blant annet:
 
-- Gjenbrukbarhet
-- Konfigurerbarhet
+- gjenbrukbarhet
+- konfigurerbarhet
 
 Under dette må man blant annet finne balansen mellom å være generell og å være spesiell. Her har for eksempel Aksel funnet en fin balanse når de har laget et standardisert sett med breakpoints til responsive design. De har også utviklet en egen type som kan ta inn ulike design tokens basert på hvilken skjermbredde man er på. På den måten sikrer man at man har et felles system å jobbe etter, samtidig som det er ganske mye spillerom for hvert enkelt team. Hvis noen absolutt må ha noe utenfor dette settet, så kan man alltids lage sitt eget breakpoint med sine egne regler. På denne måten er det både gjenbrukbart rett ut av boksen, samtidig som det ikke blokkerer å håndtere spesialtilfeller.
 
-Et annet eksempel på å gjøre komponenter konfigurerbare er polymorfi. Hva er det? Kort fortalt at du kan endre hvilket html-element en komponent rendres ut som. Det klassiske eksempelet er å bruke en Button-komponent som en lenke, fordi du vil bruke noe som ser ut som en knapp til å navigere til en ny side. Det bedrer universell utforming, ettersom en a-tag er semantisk korrekt element for oppgaven. Det kunne for eksempel vært slik
+Et annet eksempel på å gjøre komponenter konfigurerbare er polymorfi. Hva er det? Kort fortalt at du kan endre hvilket HTML-element en komponent rendres ut som. Det klassiske eksempelet er å bruke en Button-komponent som en lenke, fordi du vil bruke noe som ser ut som en knapp til å navigere til en ny side. Det bedrer universell utforming, ettersom en a-tag er semantisk korrekt element for oppgaven. Det kunne for eksempel vært slik
 
 ```jsx
 <Button as="a" href="/kontakt-oss" variant="primary">
@@ -134,7 +134,7 @@ i stedet for slik
 
 Designsystemet støtter dette med [asChild](https://www.designsystemet.no/grunnleggende/for-utviklere/komposisjon) gjennom [Radix sin Slot-komponent](https://www.radix-ui.com/primitives/docs/utilities/slot), mens Aksel gjør det med sin egen [OverridableComponent](https://aksel.nav.no/grunnleggende/kode/overridablecomponent). Felles for de begge er at de sikrer typesikkerhet for komponenten, i motsetning til hva du får med enklere implementasjoner.
 
-Som et siste notis, er det å finne balansen på dette feltet antakelig det aller vanskeligste i et designsystem. Blir det for generelt er det ikke brukbart. Blir det for spesielt blir det kaos både å bruke og vedlikeholde. Blir det for konfigurerbart risikerer du at utviklere gjør ting de ikke burde, og ødelegger opplevelsen av _et_ budskap fra _én_ avsender. Det er her håndverk og erfaring virkelig kommer til sin rett.
+Som en siste notis, er det å finne balansen på dette feltet antakelig det aller vanskeligste i et designsystem. Blir det for generelt er det ikke brukbart. Blir det for spesielt blir det kaos både å bruke og vedlikeholde. Blir det for konfigurerbart risikerer du at utviklere gjør ting de ikke burde, og ødelegger opplevelsen av _ett budskap fra én avsender_. Det er her håndverk og erfaring virkelig kommer til sin rett.
 
 ### Så enkelt som mulig å vedlikeholde
 
