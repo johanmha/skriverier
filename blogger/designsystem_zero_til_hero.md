@@ -112,9 +112,9 @@ Det er ingen overdrivelse å si at Designsystemet og Aksel tar sin dokumentasjon
 For at et designsystem skal kunne spare tid for utviklere, må det også faktisk brukes utviklere. Da må det være brukbart på tvers av mange ulike team, med mange ulike behov og spesialtilfeller, og med mange utviklere som skal ha en god utvikleropplevelse. For at det skal være mulig må du ha flere ting, blant annet:
 
 - Gjenbrukbarhet
-- Konigurerbarhet
+- Konfigurerbarhet
 
-Under dette må man blant annet finne balansen mellom å være generell og å være spesiell. Her har for eksempel Aksel funnet en fin balanse når de har laget et standardisert sett med breakpoints til responsive design. De har også utviklet en egen type som kan ta inn ulike design tokens basert på hvilken skjermbredde man er på. På den måten sikrer man at man har et felles system å jobbe etter, samtidig som det er ganske mye spillerom for hvert enkelt team. Hvis noen absolutt må ha noe utenfor dette settet, så kan man alltids lage sitt eget breakpoint med sin egne regler. På denne måten er det både gjenbrukbart rett ut av boksen, samtidig som det ikke blokkerer å håndtere spesialtilfeller.
+Under dette må man blant annet finne balansen mellom å være generell og å være spesiell. Her har for eksempel Aksel funnet en fin balanse når de har laget et standardisert sett med breakpoints til responsive design. De har også utviklet en egen type som kan ta inn ulike design tokens basert på hvilken skjermbredde man er på. På den måten sikrer man at man har et felles system å jobbe etter, samtidig som det er ganske mye spillerom for hvert enkelt team. Hvis noen absolutt må ha noe utenfor dette settet, så kan man alltids lage sitt eget breakpoint med sine egne regler. På denne måten er det både gjenbrukbart rett ut av boksen, samtidig som det ikke blokkerer å håndtere spesialtilfeller.
 
 Et annet eksempel på å gjøre komponenter konfigurerbare er polymorfi. Hva er det? Kort fortalt at du kan endre hvilket html-element en komponent rendres ut som. Det klassiske eksempelet er å bruke en Button-komponent som en lenke, fordi du vil bruke noe som ser ut som en knapp til å navigere til en ny side. Det bedrer universell utforming, ettersom en a-tag er semantisk korrekt element for oppgaven. Det kunne for eksempel vært slik
 
@@ -193,13 +193,13 @@ Universell utforming er åpenbart også god brukeropplevelse. Gjennom et designs
 
 ### Felles avsender
 
-Noe føles rart når man fra den samme avsenderen får store eller små ulikheter i brukeropplevelsen.
+Noe føles rart når man fra én avsender får store eller små ulikheter i brukeropplevelsen.
 
 ![somethings wrong](../bilder/somethingswrong2.png)
 
 Da er et designsystem fint å ha, ettersom det gir deg grunnelementene ferdig ut av boksen, og dette gir deg mye når det kommer til felles avsender. Da jeg selv startet som frontender, tilbake i 2017, var mitt første prosjekt basert på bootstrap. Det tok ikke lang tid før jeg innså at et mistenkelig antall web-sider så ut som min egen. Det er kraften på godt og vondt av et designsystem eller komponentbibliotek.
 
-At alle bruker de samme komponentene og tokenene sikrer dog ikke alene at følelsen blir lik på tvers av en organisasjon. Utviklere kan overskrive css-variabler, endre komponenter sine forhåndsdefinerte verdier, bruke kompontentene på utilsiktede måter, og sikkert tulle og tøyse på et hav andre måter. Derfor er systemer for å sikre korrekt bruk en viktig brikke i et designsystem.
+At alle bruker de samme komponentene og tokenene sikrer dog ikke alene at følelsen blir lik på tvers av en organisasjon. Utviklere kan overskrive css-variabler, endre komponenter sine forhåndsdefinerte verdier, bruke komponentene på utilsiktede måter, og sikkert tulle og tøyse på et hav andre måter. Derfor er systemer for å sikre korrekt bruk en viktig brikke i et designsystem.
 
 Det første verktøyet er dokumentasjon. Fortell utviklerne hvor og hvordan designsystemet skal brukes og du har rydda unna en del rot før det oppstår. Men ikke alle leser dokumentasjon, og enda færre følger den, så hardere lut må til. Man kan for eksempel bygge et kommandolinjeverktøy. Det kan du deretter bruke til å sørge for at css blir importert på riktig vis, med layers i riktig rekkefølge, slik at du faktisk får rett styling på rett sted. Det har [Aksel gjort](https://aksel.nav.no/grunnleggende/kode/css-import).
 
