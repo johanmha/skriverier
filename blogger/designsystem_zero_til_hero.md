@@ -20,7 +20,7 @@ Dette er ikke en oppskrift på hvordan man bygger et designsystem. Er du ute ett
 
 - [Her](https://storybook.js.org/tutorials/design-systems-for-developers/) har storybook oppsummert veldig mye godt og grunnleggende om hva de mener et designsystem bør være
 - [Her](https://main--66b4b3beb91603ed0ab5c45e.chromatic.com/?path=/docs/docs-getting-started--docs) er portalen til Aksel, NAV sin verktøykasse for produktutvikling, som også inkluderer, (og i stor grad _er_ spør du meg), et designsystem.
-- [Her](<(https://www.designsystemet.no/)>) har du Digdir sitt Designsystemet.
+- [Her](<(https://www.designsystemet.no/)>) har du Designsystemet fra Digdir.
 - [Her](https://github.com/johanmha/yadsy) finner du mitt eget quick and dirty oppsett av et minimalt designsystem, yadsy. Det er et godt utgangspunkt med tanke på struktur og CI/CD.
 
 Det denne bloggposten er, er i stedet en samling betraktninger på hva som gjør et godt designsystem til et godt designsystem.
@@ -76,9 +76,9 @@ En slags de facto standard i bygging av designsystem. Navet i designsystemet (pu
 
 [Chromatic](https://www.chromatic.com/) er også en slags de facto standard, men for visuell testing av komponentene i et designsystem. Står litt mer om det [lenger nede her](#så-enkelt-som-mulig-å-vedlikeholde).
 
-#### Typescript
+#### TypeScript
 
-Typescript hjelper både i bygging og bruk av et designsystem. I Aksel og Designsystemet støtter det utvikling og bruk gjennom blant annet å gi IDE-funksjonalitet, sikre konsistent bruk, trygge vedlikehold og som levende dokumentasjon av koden.
+TypeScript hjelper både i bygging og bruk av et designsystem. I Aksel og Designsystemet støtter det utvikling og bruk gjennom blant annet å gi IDE-funksjonalitet, sikre konsistent bruk, trygge vedlikehold og som levende dokumentasjon av koden.
 
 #### Kommandolinjeverktøy (CLI fra nå av)
 
@@ -90,7 +90,7 @@ Håndhever at utviklere bruker designsystemet som tilsiktet. Snakker litt mer om
 
 - det er for mye styr å få til noe som gir verdi på tvers av mange team
 - man ikke har kommet seg så langt
-- typescript gjør nok
+- TypeScript gjør nok
 - det bare er en dum idé 🤷🏼‍♂️
 
 Del gjerne om du har mer innsikt på akkurat det.
@@ -142,7 +142,7 @@ Desto mer du har og desto mer komplekst det er, desto mer krever det å vedlikeh
 
 Årsaken er at automatiske tester ikke kan fange opp alt som kan gå galt med en komponent i alle sine tilstander. Å ha det som mål ville være både tidkrevende å implementere og i tillegg føre med seg sin egen kompleksitet. [Chromatic](https://www.chromatic.com/), et mye brukt visuelt testverktøy, baserer seg på snapshots av eksempelvis en komponents samlede tilstander. Et snapshot genereres for eksempel før en pull request, og det sjekkes automatisk om noe er endret. Om noe er endret fra forrige snapshot til dette, varsles mennesket i loopen, og man kan ta stilling til om dette er endring som forventet. Dette er for eksempel implementert i Designsystemet, og et oppsett kan se ut som [dette for Button-komponenten](https://github.com/digdir/designsystemet/blob/next/packages/react/src/components/Button/Button.chromatic.tsx).
 
-En annen essensiell bit av et vedlikeholdbart designsystem er typescript. Vi går ikke noe nærmere inn på alle fordelene med typescript her, annet enn det jeg [oppsummerte kort over her](#typescript). Du kan eventuelt grave litt i for eksempel [denne](https://github.com/navikt/aksel/blob/main/%40navikt/core/react/src/button/Button.tsx) eller [denne](https://github.com/digdir/designsystemet/blob/next/packages/react/src/components/Button/Button.tsx) koden om du er nysgjerrig.
+En annen essensiell bit av et vedlikeholdbart designsystem er TypeScript. Vi går ikke noe nærmere inn på alle fordelene med TypeScript her, annet enn det jeg [oppsummerte kort over her](#TypeScript). Du kan eventuelt grave litt i for eksempel [denne](https://github.com/navikt/aksel/blob/main/%40navikt/core/react/src/button/Button.tsx) eller [denne](https://github.com/digdir/designsystemet/blob/next/packages/react/src/components/Button/Button.tsx) koden om du er nysgjerrig.
 
 ### Lover og regler og universell utforming
 
