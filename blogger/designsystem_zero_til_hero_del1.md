@@ -19,23 +19,21 @@ Til slutt før vi begynner: hvor ok Språkrådet er med at jeg skriver "zero til
 Dette er ikke en oppskrift på hvordan man bygger et designsystem. Er du ute etter det, finnes det mange gode inspirasjonskilder der ute, og her er noen av dem:
 
 - [Her](https://storybook.js.org/tutorials/design-systems-for-developers/) har Storybook oppsummert veldig mye godt og grunnleggende om hva de mener et designsystem bør være
-- [Her](https://main--66b4b3beb91603ed0ab5c45e.chromatic.com/?path=/docs/docs-getting-started--docs) er portalen til Aksel, Nav sin verktøykasse for produktutvikling, som også inkluderer, (og i stor grad _er_ spør du meg), et designsystem.
-- [Her](<(https://www.designsystemet.no/)>) har du Designsystemet fra Digdir.
+- [Her](https://aksel.nav.no/) er portalen til Aksel, Nav sin verktøykasse for produktutvikling, som også inkluderer, (og i stor grad _er_ spør du meg), et designsystem.
+- [Her](https://www.designsystemet.no/) har du Designsystemet fra Digdir.
 - [Her](https://github.com/johanmha/yadsy) finner du mitt eget quick and dirty-oppsett av et minimalt designsystem, yadsy. Det er et godt utgangspunkt med tanke på struktur og CI/CD.
 
 Det denne bloggserien i to deler er, er i stedet en samling betraktninger på hva som gjør et godt designsystem til et godt designsystem.
 
 ### Hva snakker vi om
 
-Ordet designsystem kan strengt tatt brukes om flere ting. I designverdenen kan det for eksempel være et design satt opp i eksempelvis Figma, som beskriver alt fra de minste bestanddelene som farger og fonter, til grunnkomponenter som knapper og input-felter/inndatafelter, til større sammenstillinger som kort, og hele sider.
-
-Slik sett er det nært beslektet designsystemet vi snakker om i denne bloggserien: designsystemet brukt i frontend-utvikling. [Det består i følge Storybook av](https://storybook.js.org/tutorials/design-systems-for-developers/react/en/introduction/)
+Akkurat hva et designsystem er, er ikke helt lett å sette fingern på. Hoveddelene av et designsystem for en utvikler, er som Storybook er inne på [her](https://storybook.js.org/tutorials/design-systems-for-developers/react/en/introduction/)
 
 - komponenter
 - design tokens
 - dokumentasjon
 
-Man kan også se totalen av designets spesifikasjon i Figma og designsystemet som et designsystem, og et designsystem vil i alle tilfeller ofte bygge på et design(system) i nettopp Figma. Som vanlig er språket ikke uten sine dobbeltbetydninger og usikkerheter. I denne bloggserien er et designsystem herfra og ut brukt for å beskrive ca det som Storybook definerer et designsystem som. I tilfellet for Aksel fra Nav og Designsystemet fra Digdir, brukes det om det totale systemet, selv om det også er upresist på alle slags måter. Men jaja, det bør være tålelig forståelig utifra konteksten.
+Man kan også definere inn designskisser i Figma, retningslinjer for bruk, standarder for tilgjengelighet, og en hel del annet. I denne bloggserien bruker jeg ordet designsystem litt løst og fast innenfor rammene skissert ovenfor. Forhåpentligvis er det tålelig forståelig hva som menes utifra konteksten, hvis ikke er det bare å klage. I tilfellene Aksel fra Nav og Designsystemet fra Digdir, bruker jeg designsystem om hele systemet, selv om Aksel [definerer det litt annerledes](https://aksel.nav.no/side/om-aksel).
 
 ### Prosessen
 
