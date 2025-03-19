@@ -15,7 +15,7 @@ Første del med introduksjon og tidssparing finner du [her](./designsystem_zero_
 
 ## God brukeropplevelse er kongen
 
-Nå over til punk 2: Hvordan kan et designsystem bidra til god brukeropplevelse.
+Nå over til punkt 2: Hvordan kan et designsystem bidra til god brukeropplevelse.
 
 ### _Et_ gjennomtenkt design
 
@@ -48,9 +48,9 @@ og her
 )
 ```
 
-Mer avansert implementasjon kan man se i Aksel sin [Button](https://github.com/navikt/aksel/blob/main/@navikt/core/react/src/button/Button.tsx#L98), hvor det er sikret at en knapp fortsatt kan trykkes på med mellomromstasen selv om den er rendret som et annet html-element. Alt dette er gode eksempler på hvordan et komponentbibliotek kan sikre etterlevelse av lover og regler, og spare tid i samme slengen.
+Mer avansert implementasjon kan man se i Aksel sin [Button](https://github.com/navikt/aksel/blob/main/@navikt/core/react/src/button/Button.tsx#L98), hvor det er sikret at en knapp fortsatt kan trykkes på med mellomromstasten selv om den er rendret som et annet html-element. Alt dette er gode eksempler på hvordan et komponentbibliotek kan sikre etterlevelse av lover og regler, og spare tid i samme slengen.
 
-Perfekt tilgjengelige komponenter, løser dog ikke universell utforming alene. I dokumentasjonen til et designsystem kan man gi forslag til verktøy for å kontrollere at man følger gjeldende standard, og i tillegg ha andre tips, triks og retningslinjer for hvordan det bør/skal/må løses. I Aksel har du en betydelig mengde artikler på [god praksis innen universell utforming](https://aksel.nav.no/god-praksis/universell-utforming). Det inkluderer blant annet denne om [navigasjon i skjemaer](https://aksel.nav.no/god-praksis/artikler/navigasjon-i-skjemaer), og denne veldig nyttige om [frontend-kode og tilgjengelighet](https://aksel.nav.no/god-praksis/artikler/utvikling).
+Perfekt tilgjengelige komponenter løser dog ikke universell utforming alene. I dokumentasjonen til et designsystem kan man gi forslag til verktøy for å kontrollere at man følger gjeldende standard, og i tillegg ha andre tips, triks og retningslinjer for hvordan det bør/skal/må løses. I Aksel har du en betydelig mengde artikler på [god praksis innen universell utforming](https://aksel.nav.no/god-praksis/universell-utforming). Det inkluderer blant annet denne om [navigasjon i skjemaer](https://aksel.nav.no/god-praksis/artikler/navigasjon-i-skjemaer), og denne veldig nyttige om [frontend-kode og tilgjengelighet](https://aksel.nav.no/god-praksis/artikler/utvikling).
 
 ![Utilgjengelig](../bilder/utilgjengelig.gif)
 
@@ -62,7 +62,7 @@ Noe føles rart når man fra én avsender får store eller små ulikheter i bruk
 
 ![somethings wrong](../bilder/somethingswrong2.png)
 
-Da er et designsystem fint å ha, ettersom det gir deg grunnelementene ferdig ut av boksen, og dette gir deg mye når det kommer til felles avsender. Da jeg selv startet som frontender, tilbake i 2017, var mitt første prosjekt basert på bootstrap. Det tok ikke lang tid før jeg innså at et mistenkelig antall web-sider så ut som min egen. Det er kraften på godt og vondt av et designsystem eller komponentbibliotek.
+Da er et designsystem fint å ha, ettersom det gir deg grunnelementene ferdig ut av boksen, og dette gir deg mye når det kommer til felles avsender. Da jeg selv startet som frontender tilbake i 2017, var mitt første prosjekt basert på bootstrap. Det tok ikke lang tid før jeg innså at et mistenkelig antall web-sider så ut som min egen. Det er kraften på godt og vondt av et designsystem eller komponentbibliotek.
 
 At alle bruker de samme komponentene og tokenene sikrer dog ikke alene at følelsen blir lik på tvers av en organisasjon. Utviklere kan overskrive css-variabler, endre komponenter sine forhåndsdefinerte verdier, bruke komponentene på utilsiktede måter, og sikkert tulle og tøyse på et hav andre måter. Derfor er systemer for å sikre korrekt bruk en viktig brikke i et designsystem.
 
@@ -80,7 +80,7 @@ Oppsummert virker det som det er mange små valg og verktøy som gjør et godt d
 
 Men som enkeltperson da - er det noe vits å lage sitt eget designsystem? Vel, det vil gi deg et konsistent uttrykk på web-sidene dine (om du lager den slags på fritiden), og du slipper å implementere tidkrevende ting som universell utforming på nytt hver gang (om du bryr deg om den slags, noe jeg synes du bør). Du får også generelle komponenter rett ut av din egen boks, og kan spare tid på den måten. I tillegg har vi jo alle opplevd at vi gjerne skulle ha dokumentert vår egen kode bedre, både for å forstå valgene, men også noen ganger bare for å forstå. Det oppfordrer et designsystem deg til å gjøre.
 
-Det korteste veien til mål er nok likevel å bare bruke et av de store komponentbibliotekene som [Chakra UI](https://www.chakra-ui.com/), eller til og med [Designsystemet](https://github.com/digdir/designsystemet#table-of-contents) til Digdir, som er helt åpent tilgjengelig. Resultatet blir kanskje masseprodusert av utseende, men bryr den generelle brukeren seg noe særlig om det? Neppe. Du kan faktisk også bygge ditt eget designsystem på toppen av dem. Det er jo litt kult.
+Den korteste veien til mål er nok likevel å bare bruke et av de store komponentbibliotekene som [Chakra UI](https://www.chakra-ui.com/), eller til og med [Designsystemet](https://github.com/digdir/designsystemet#table-of-contents) til Digdir, som er helt åpent tilgjengelig. Resultatet blir kanskje masseprodusert av utseende, men bryr den generelle brukeren seg noe særlig om det? Neppe. Du kan faktisk også bygge ditt eget designsystem på toppen av dem. Det er jo litt kult.
 
 Så det som taler for å lage ditt eget designsystem (yet another yadsy aka yayadsy), er nok mest av alt innsikten du får på veien.
 
