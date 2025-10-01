@@ -1,7 +1,7 @@
 ---
 title: Designsystem - fra zero til hero
 date: 2025-03-17
-published:
+published: https://medium.com/systek/designsystem-fra-zero-til-hero-4a2127e1bf4e
 ---
 
 # Designsystem - fra zero til hero

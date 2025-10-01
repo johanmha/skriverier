@@ -1,7 +1,7 @@
 ---
 title: Designsystem - fra zero til hero - brukeropplevelse
 date: 2025-03-17
-published:
+published: https://medium.com/systek/designsystem-fra-zero-til-hero-brukeropplevelse-1a42451c6769
 ---
 
 # Designsystem - fra zero til hero - brukeropplevelse
