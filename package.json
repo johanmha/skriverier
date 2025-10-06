@@ -5,6 +5,7 @@
   "main": "",
   "type": "module",
   "scripts": {
+    "new-blog": "node opprettBlogg.js",
     "update-publication-table": "node genererPublikasjonsTabell.js && npm run format:table",
     "format": "npx prettier --write .",
     "format:table": "npx prettier --write ./publiseringer.md"
