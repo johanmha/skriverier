@@ -10,17 +10,17 @@ published:
 
 ## Vi reiser
 
-Seks stykker var vi som skulle på Nordic.JS 2025, destinasjon Stockholm. Erling, Daniel, Karl og Johan kom i felles firersete på tog. Det var lokket med multiplayer Pico Park på Switch for alle reisende, noe det aldri ble noe av. Karl meldte ellers at han aldri før hadde hatt et tilsvarende høyt alkoholkonsum på tog, uten at noen ble videre imponert av det. Hans Ole mente det eneste man kunne tolke fra uttalelsen var at Karl aldri kunne ha vært på interrail. Nevnte Hans Ole fløy inn fra Oslo, mens siste deltaker og hundre prosent av kvinneandelen, Siri, kom direkte fra Sicilia. Kan nevnes at hun også var i Budapest da vi organiserte turen (mrs. world wide).
+Seks stykker var vi som skulle på Nordic.JS 2025, destinasjon Stockholm. Erling, Daniel, Karl og Johan kom i felles firersete på tog. Det var lokket med multiplayer Pico Park på Switch for alle reisende, noe det aldri ble noe av. Hans Ole fløy inn fra Oslo, mens siste deltaker og hundre prosent av kvinneandelen, Siri, kom direkte fra Sicilia. Kan nevnes at hun også var i Budapest da vi organiserte turen (mrs. world wide).
 
-En bra gjeng hadde gått inn for landing, og vi var klare for fag, og litt hygge attåt.
+En bra gjeng hadde gått inn for landing, og vi var klare for fag, og litt hygge attåt. Notis: ganske kult av Systek å sponse konferansebilletter, hotell og reise.
 
 ## Dag 1
 
-Vi kommer oss opp etter litt for lite søvn, spiser frokost, og tar en bitteliten maxitaxi til Pier 9. Etter å ha sjekket inn er vi klar for åpning.
+Vi kommer oss opp etter litt for lite søvn, spiser frokost, og tar en bitteliten maxitaxi til magasin 9. Etter å ha sjekket inn er vi klar for åpning.
 
 - **bilde fra taxituren**
 
-Årets verter er hyggelige og passe kleine, med innøvde, passe dårlige utvikler-jokes. Det informeres om nødutganger, tidsskjema og om hva som skjer når du går over tiden som foredragsholder: klassisk musikk (hvilken?) begynner først subtilt før det blir høyere og til slutt veldig høyt. Da er det på tide å komme seg av. Til undertegnedes store glede var det heldigvis ikke noen som trakk strikken unødig langt.
+Årets verter er hyggelige og passe kleine, med innøvde, passe dårlige utvikler-jokes. Det informeres om nødutganger, tidsskjema og om hva som skjer når du går over tiden som foredragsholder: klassisk musikk (hvilken?) begynner først subtilt før det blir høyere og til slutt veldig høyt. Da er det på tide å komme seg av. Til undertegnedes store glede var det heldigvis ikke noen som tøyde strikken unødig langt.
 
 Ellers er det badstue utenfor, vertene har grønne jakker og vi er klare til å komme i gang.
 
@@ -29,7 +29,7 @@ Ellers er det badstue utenfor, vertene har grønne jakker og vi er klare til å 
 Hvem: Phil Hawksworth
 Jobber med: Head of Developer Relations at Deno
 
-Etter en kort intro om hvor vanskelig det er å velge musikk å entre scenen til, setter han i gang med en historisk oversikt over JavaScripts utvikling. Hovedpoenget hans virker å være at det strengt tatt ikke er JavaScripts™ men ECMAScripts historie. Dette får han frem med små slengere i retning Oracle hvor de passer inn. Hovedbudskapet blir litt spist opp av at han går godt over tiden, får dagens første du-er-over-tiden-musikk, og må rushe de siste slidene. Anbefaler å sjekke opp Deno's kamp mot Goliat (Oracle) [her](). Kort oppsummert vil de ugyldiggjøre Oracle sitt eierskap til JavaScript på vegne av oss alle, slik at konferansen kunne hett Nordic JavaScript. Du kan støtte den juridiske prosessen [her]()
+Etter en kort intro om hvor vanskelig det er å velge musikk å entre scenen til, setter han i gang med en historisk oversikt over JavaScripts utvikling. Hovedpoenget hans virker å være at det strengt tatt ikke er JavaScripts™ men ECMAScripts historie. Dette får han frem med små slengere i retning Oracle hvor de passer inn. Hovedbudskapet blir litt spist opp av at han går godt over tiden, får dagens første du-er-over-tiden-musikk, og må rushe de siste slidene. Anbefaler å sjekke opp Denos kamp mot Goliat (Oracle) [her](https://deno.com/blog/javascript-tm-gofundme). Kort oppsummert vil de ugyldiggjøre Oracle sitt eierskap til JavaScript på vegne av oss alle, slik at konferansen kunne hett Nordic JavaScript. Du kan støtte den juridiske prosessen [her](https://www.gofundme.com/f/help-us-challenge-oracles-javascript-trademark/donate).
 
 - **I am doing my part gif**
 
@@ -44,7 +44,7 @@ Av nevneverdige forslag som ligger i pipeline (finn norsk ord) finner vi blant a
 
 ### Fika sposored by...
 
-Å få sponset kaffepausene er penger man ikke kan si nei til, men det føyer seg like fullt inn i rekken av Lexus pause-prater og SnapDragon Old Trafforder, som jeg ikke er noen stor fan av. Jaja. Gode kanelboller var det i alle fall selv om Daniel syntes de var litt vel klissete, noe det var vanskelig å være uenig i. I-landsproblemer der altså. Karl prøvde ut ballbingen.
+Å få sponset kaffepausene er penger man ikke kan si nei til, men det føyer seg like fullt inn i rekken av Lexus pause-prater og Intility arenaer, som jeg ikke er noen stor fan av. Jaja. Gode kanelboller var det i alle fall selv om Daniel syntes de var litt vel klissete, noe det var vanskelig å være uenig i. I-landsproblemer der altså. Karl prøvde ut ballbingen.
 
 - **Karl i ballbingen**
 
@@ -62,7 +62,7 @@ Først ut av en uunngåelig andel KI-baserte talks. Her viste han at man lage KI
 - Live demo er modig, selv om pratende KI-er kanskje ikke er like imponerende i 2025 som i 2017
 - Demoen slo best an når den faktisk feilet. Moro og instruktivt.
 
-Han var også den første til å komme seg i land på tid, noe som bør feires som en liten vinn.
+Han var også den første til å komme seg i land på tid, noe som bør feires som en liten seier.
 
 ### Writing an emulator in JavaScript?
 
@@ -71,11 +71,11 @@ Jobber med: Product engineer at epilot & author of The Opinionated Guide to Reac
 
 En prat som var mer som en kuriositet å regne, noe hun forsåvidt var tidlig ute med å innrømme selv. Jeg tar med meg hjem at man ikke burde skrive en emulator i JavaScript og at hvis man likevel ønsker å gjøre det, så er den store oppgaven å gjenskape alle mulige slags spilleventer én for én. Det er faktisk også lovlig å lage emulatorer, men prøver du deg på noe med Nintendo, så forvent å bli saksøkt uansett.
 
-For den ekstra nysgjerrige finnes koden og presentasjonen hennes (som kode) der ute på [internettet](https://github.com/SaraVieira/making-js-emulator).
+For den ekstra nysgjerrige finnes koden og presentasjonen hennes (som kode) der ute på [Internettet](https://github.com/SaraVieira/making-js-emulator).
 
 ### Lunsj
 
-Vegansk, glutenfri diett ble presset på alle. Det var mer populært hos noen enn hos andre, men det er jo sikkert ganske kult for vegetarianerne å ikke være en ettertanke for én gangs skyld. Selv er jeg for, og sier mer av det :+1:. Logistikkmessig en udiskutabel vinn for arrangørene.
+Vegansk, glutenfri diett ble presset på alle. Det var mer populært hos noen enn hos andre, men det er jo sikkert ganske kult for vegetarianerne å være førsteklasses innbyggere for én gangs skyld. Selv er jeg for, og sier mer av det :+1:. Logistikkmessig en udiskutabel seier for arrangørene.
 
 ### Access-what? why and how. A11y for all
 
@@ -86,7 +86,7 @@ Web på 90-tallet var ikke tilgjengelig:
 
 - **bilde av utilgjengelig web fra 90-tallet**
 
-Men nå kan den og bør den være det. Kort oppsummert skal alle kunne oppfatte, forstå, navigere, interagere og bidra på nettsider. Pass på at dine nettsider også følger det, for én dag sitter du der og har nedsatt funksjon selv (les: dårlig syn, leddgikt og dårlig hørsel). Du kan finne ut mye [her for eksempel](https://www.uutilsynet.no/regelverk/regelverk-og-krav/746), eller her hos [The A11y Project](https://www.a11yproject.com/posts/).
+Men nå kan den og bør den være det. Kort oppsummert skal alle kunne oppfatte, forstå, navigere, interagere og bidra på nettsider. Pass på at dine nettsider også følger det, for én dag sitter du der og har nedsatt funksjon selv (les: dårlig syn, leddgikt og dårlig hørsel. Eventuelt bare dårlig belysning, skitten skjerm, støyete omgivelser og alt mulig annet). Du kan finne ut mye [her for eksempel](https://www.uutilsynet.no/regelverk/regelverk-og-krav/746), eller her hos [The A11y Project](https://www.a11yproject.com/posts/).
 
 ### Pause med Palme
 
@@ -110,7 +110,7 @@ Til å ta med seg hjem: skjermlesere må kunne se og gi tilbakemelding på feilm
 Hvem: Sophie Koonin
 Jobber med: Web engineering lead and a staff engineer at Monzo Bank
 
-De skulle velge typing for et React-prosjekt. De valge Flow. De valge feil. Det er enkelt å se feilen i ettertid, men var et godt valg i nåtid. Vi alle har gjort det, så spørsmålet er bare: hvordan rydder man opp? Her er noen hovedpunkter fra Sophie på nettopp det:
+De skulle velge typing for et React-prosjekt. De valge Flow. De valge feil. Det er enkelt å se feilen i ettertid, men var et godt valg i nåtid. Vi har alle gjort det, så spørsmålet er bare: hvordan rydder man opp? Her er noen hovedpunkter fra Sophie på nettopp det:
 
 - Gjennomfør PoC på refaktoreringen og dokumenter det
 - Dokumenter alt du gjør, hvorfor, og alternativene som ble vurdert
@@ -127,19 +127,19 @@ Så et prosjekt som mange andre prosjekter altså.
 
 ## Nok fag, mer hygge
 
-På dette tidspunktet var deler av gruppa trøtte og gira på å bli klar til dagens høydepunkt: trestjerners middag på Frantzén:scream:. Deler av gruppa tok derfor turen hjem for å sikre tid til powernap og badstue før bespising. Vi møtte derette opp i samlet gruppe, kledelige fem minutter før tiden.
+På dette tidspunktet var deler av gruppa trøtte og gira på å bli klar til dagens høydepunkt: trestjerners middag på Frantzén:scream:. Deler av gruppa tok derfor turen hjem for å sikre tid til powernap og badstue før bespising. Vi møtte deretter opp i samlet gruppe, kledelige fem minutter før tiden.
 
 ## Frantzén
 
-"Er ni taggad"? Spørsmålet, "er dere gira", kom fra en av våre svenske servitører i entreen til Frantzén, Stockholms éne trestjerners restaurant. Svaret var ja. Ja, vi var så definitivt taggad! Og med god grunn; det var restaurantopplevelse mange hakk over det de mange av oss hadde opplevd før. Fra vannliljer i gangen, til belysning og Red Hot Chillipeppers i heisen, til Champagne og amuse-bouche i lounge'en, hvor vi også fikk en tour av alle hovedinngrediensene framme hos kokkene. De andre Systekerne kunne i tillegg humre over dagens mest pinlige situasjon, når Johan blandet sammen to av servitørene. Han reddet seg inn med litt lett rødmende stotring i etterkant, til mer glede for resten av gjengen.
+"Är ni taggad"? Spørsmålet, "er dere gira", kom fra en av våre svenske servitører i entreen til Frantzén. Svaret var ja. Ja, vi var så definitivt taggad! Og med god grunn; det var restaurantopplevelse mange hakk over det de mange av oss hadde opplevd før. Fra vannliljer i gangen, til belysning og Red Hot Chillipeppers i heisen, til Champagne og amuse-bouche i lounge'en, hvor vi også fikk en tour av alle hovedingrediensene framme hos kokkene. De andre Systekerne kunne i tillegg humre over dagens mest pinlige situasjon, da Johan blandet sammen to av servitørene ved å stille oppfølgingsspørsmål om champagnen til en ny person uten å få det med seg. Han reddet seg inn med litt lett rødmende stotring i etterkant, til mer glede for resten av gjengen.
 
 - **Bilder fra loungen**
 
-Deretter kom en omvisning av arbeidskjøkkenet og vinkjelleren, fylt med akkurat så eksklusiv vin som du skulle forvente. Så inn i spisesalen fylt med kokker, rolige som skjærer på tunet, i et nydelig rent og pent kjøkken, med gjestene spredd rundt dem. Så til en fantastisk meny, til god vin, til god pairing av vinen og maten, til den åpenbart ikke innøvde vinkunnskapen, ettertestet med noen bonusspørsmål fra gruppas vinnørd, besvart presist og uten nøling fra sommelierene. Et øyeblikk som stakk seg særlig ut var da de seks gjestene (oss), ble servert av seks servitører, og fikk seks perfekte retter perfekt koordinert foran oss. Du kunne føle Vivaldi spille i bakgrunnen, og kjenne på opplevelsen av å være en del av en episode Chefs Table. Kult.
+Deretter kom en omvisning av arbeidskjøkkenet og vinkjelleren, fylt med akkurat så eksklusiv vin som du skulle forvente. Så inn i spisesalen fylt med kokker, rolige som skjærer på tunet, i et nydelig rent og pent kjøkken, med gjestene spredd rundt dem. Så til en fantastisk meny, til god vin, til god parring av vinen og maten, til den åpenbart ikke innøvde vinkunnskapen, ettertestet med noen bonusspørsmål fra gruppas vinnørd, besvart presist og uten nøling fra sommelierene. Et øyeblikk som stakk seg særlig ut var da de seks gjestene (oss), ble servert av seks servitører, og fikk seks perfekte retter perfekt koordinert foran oss. Du kunne føle Vivaldi spille i bakgrunnen, og kjenne på opplevelsen av å være en del av en episode Chefs Table. Kult.
 
 - **Masse bilder (mat, vin etc)**
 
-Til slutt tilbake opp i lounge'en, til våre behagelige og tilbakelente sitteplasser, til en helt utrolig petit four, som Daniel spøkefult men super seriøst påpekte var mer av en grand huit, og til slutt til en hinnsides regning som presset kredittkortgrensa til Karl, men likefullt ble betalt med stor glede etter at han og Hans Ole hviskende i hjørnet hadde kommet frem til et passende tips-nivå.
+Til slutt tilbake opp i lounge'en, til våre behagelige og tilbakelente sitteplasser, til en helt utrolig petit four, som Daniel spøkefult men super seriøst påpekte var mer av en grand huit, og til slutt regningen som ble betalt av Karl, etter at han og Hans Ole hviskende i hjørnet hadde kommet frem til et passende tipsnivå.
 
 - **Bilde av regning og grand huit**
 
@@ -223,7 +223,7 @@ Og dårlig er både dårlig UX og dårlig sikkerhet. Det som derimot er helt kon
 
 ### Lightning talks
 
-Kjappe prater av konfernasedeltakere. Spesielt omdiskutert var hun som snakket om fugletitting. Det var en passe påtatt, tørrvittig oppfordring om å være mer med naturen og bli mindre deprimert. Det var svært delte meninger om hvorvidt det er greit å snakke om fugletitting på en tech-konferanse, hvor det ble hyllet av enkelt på internettet, mens vår egen Daniel Eriksson mente det var et hån mot konseptet JavaScript-konferanse.
+Kjappe prater av konfernasedeltakere. Spesielt omdiskutert var hun som snakket om fugletitting. Det var en passe påtatt, tørrvittig oppfordring om å være mer med naturen og bli mindre deprimert. Det var svært delte meninger om hvorvidt det er greit å snakke om fugletitting på en tech-konferanse, hvor det ble hyllet av enkelt på Internettet, mens vår egen Daniel Eriksson mente det var et hån mot konseptet JavaScript-konferanse.
 
 ### Codemods in the Era of AI
 
