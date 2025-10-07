@@ -36,7 +36,7 @@ Etter en kort intro om hvor vanskelig det er å velge musikk å entre scenen til
 ### What's up in ES2027
 
 Hvem: Christophe Porteneuve
-Jobber med: Web dev siden 1995 og senior staff engineer at Doctolib
+Jobber med: Professional web dev since 1995 and Senior Staff Engineer at Doctolib
 
 Etter litt historie var det nå tid for å se fremover. Christophe minner oss først på at [ECMAScript er standarden JavaScript er basert på](https://developer.mozilla.org/en-US/docs/Glossary/ECMAScript) og at man må hive seg på kampen mot Oracle.
 
@@ -51,7 +51,7 @@ Av nevneverdige forslag som ligger i pipeline (finn norsk ord) finner vi blant a
 ### Look ma, no hands! Multimodal AI-Agents in the browser
 
 Hvem: Nico Martin
-Jobber med: Machine learning engineer at Hugging Face
+Jobber med: Machine Learning Engineer at 🤗 Hugging Face
 
 Først ut av en uunngåelig andel KI-baserte talks. Her viste han at man lage KI-agenter basert på små LLM'er, og kjøre dem i browseren. Tingene å ta med seg hjem var:
 
@@ -67,7 +67,7 @@ Han var også den første til å komme seg i land på tid, noe som bør feires s
 ### Writing an emulator in JavaScript?
 
 Hvem: Sara Vieira
-Jobber med: Product engineer hos epilot og forfatter av The Opinionated Guide to React
+Jobber med: Product engineer at epilot & author of The Opinionated Guide to React
 
 En prat som var mer som en kuriositet å regne, noe hun forsåvidt var tidlig ute med å innrømme selv. Jeg tar med meg hjem at man ikke burde skrive en emulator i JavaScript og at hvis man likevel ønsker å gjøre det, så er den store oppgaven å gjenskape alle mulige slags spilleventer én for én. Det er faktisk også lovlig å lage emulatorer, men prøver du deg på noe med Nintendo, så forvent å bli saksøkt uansett.
 
@@ -80,7 +80,7 @@ Vegansk, glutenfri diett ble presset på alle. Det var mer populært hos noen en
 ### Access-what? why and how. A11y for all
 
 Hvem Geizy "JZ" Domiciano
-Jobber med: Engineering Manager hos Rebtel
+Jobber med: Engineering Manager at Rebtel
 
 Web på 90-tallet var ikke tilgjengelig:
 
@@ -95,7 +95,7 @@ Før pausen ble det fra scenen opplyst om at noen har laget en KI-versjon av Olo
 ### The Cake Is a Lie... And So Is Your Login’s Accessibility
 
 Hvem: Ramona Schwering
-Jobber med: Developer Advodate hos Auth0
+Jobber med: Developer Advocate at Auth0
 
 Referansen "the cake is a lie" kommer fra spillet Portal, som kom ut en gang for over 20 år siden.
 
@@ -108,7 +108,7 @@ Til å ta med seg hjem: skjermlesere må kunne se og gi tilbakemelding på feilm
 ### So you've decided to do a technical migration...
 
 Hvem: Sophie Koonin
-Jobber med: Web engineering lead og staff engineer hos Monzo Bank
+Jobber med: Web engineering lead and a staff engineer at Monzo Bank
 
 De skulle velge typing for et React-prosjekt. De valge Flow. De valge feil. Det er enkelt å se feilen i ettertid, men var et godt valg i nåtid. Vi alle har gjort det, så spørsmålet er bare: hvordan rydder man opp? Her er noen hovedpunkter fra Sophie på nettopp det:
 
@@ -149,7 +149,10 @@ Kvelden ble sedvanlig avsluttet på karaoke-bar, hvor Siri som vanlig briljerte 
 
 Med betydelig underskudd på søvn men upåklagelig mot, møtte vi opp til dag to av konferansen.
 
-### Back to the future: of web development - Una Kravets (Google Chrome)
+### Back to the future: of web development
+
+Hvem: Una Kravets
+Jobber med: Leads the Web UI DevRel team at Google Chrome
 
 Hva kan du gjøre med moderne HTML og CSS? Veldig mye kult viser det seg! Såpass mye at flere i gruppa følte på at de måtte hjem og skrive om appene sine sporenstreks. Alt fra avanserte karuseller til lagdelte layouts (les: popover), super-snappy, og helt uten JavaScript. Kanskje ironisk på en JS-conf, men å begrense bruken er også god bruk. Om du ikke er overbevist, her er noen gode argumenter for:
 
@@ -163,7 +166,10 @@ Så du kan bygge kjappere, og gjøre livet enklere. Se ikke bort i fra at dette 
 
 - **Bilde av kule ting man kan gjøre med HTML/CSS** (?)
 
-### Shipping Node.js packages in 2025 - Joyee Cheung (Compilers team at Igalia, Node.js TSC member and V8 commiter)
+### Shipping Node.js packages in 2025
+
+Hvem: Joyee Cheung
+Jobber med: Compilers team at Igalia, Node.js TSC member and V8 commiter
 
 Vi er i 2025, men fortsatt shippes 60% av essensielle npm-pakker som Common JS, mot bare 10% som ES Modules. De resterende 30 prosentene shipper begge. Hvorfor? Flere grunner, blant annet at man ikke vil brekke apper, og dermed miste rekkevidde og bruk. Så da ender 30% opp med å støtte begge deler, noe som øker både kompleksitet og pakkestørrelse. Dermed har npm-pakkene dine som i utgangspunktet hadde mer masse en en neutronstjerne, nå doblet seg fra det igjen.
 
@@ -181,7 +187,10 @@ Du kan finne hele oppskriften og alt av detaljer i slidesettet [her](https://git
 
 Dag to starter med to fagfokuserte foredrag. Det første er ypperste klasse av fremføring med et tema som også er lett og kult å demoe. Det andre er tungt og dypt, men tydelig og klart fremført med god og ryddig engelsk. Meg med flere datt kanskje litt ut og inn mot slutten, men gi meg gjerne mer av det.
 
-### Yet Another Config File: introducing node.config.json - Marco Ippolito (Senior Security Engineer at HeroDevs, Node.js TSC member and TC39 delegate)
+### Yet Another Config File: introducing node.config.json
+
+Hvema. Marco Ippolito
+Jobber med: Senior Security Engineer at HeroDevs, Node.js TSC member and TC39 delegate
 
 Har du opplevd at skriptene i package blir overfylt av config-flag? Det er du i så fall ikke alene om, og med native features some test runner, watch mode og native typescript i node, er ikke det så rart. Enter Node Config. Kort fortalt akkurat det det høres ut som: en config fil for å konfigurere node. En god og instruktiv prat om noe som kun kan bli en oppgradering.
 
@@ -195,7 +204,10 @@ De hadde satt opp portable badstuer på området, så deler av gruppa sneik seg 
 
 - **bilde av badstuefolk**
 
-### Past Time for Passkeys - Kyle Simpson (Creator of the "You Don't Know JS" book series)
+### Past Time for Passkeys
+
+Hvem: Kyle Simpson
+Kjent fra: Creator of the "You Don't Know JS" book series
 
 Konferansens superstjerne blir jeg fortalt av Erling og Karl mens vi tar en pils på togstasjonen før avgang. Han operer i alle fall som en ringrev i game'et med stor trygghet og bra med humor. Han starter med å hamrer inn at
 
@@ -213,7 +225,10 @@ Og dårlig er både dårlig UX og dårlig sikkerhet. Det som derimot er helt kon
 
 Kjappe prater av konfernasedeltakere. Spesielt omdiskutert var hun som snakket om fugletitting. Det var en passe påtatt, tørrvittig oppfordring om å være mer med naturen og bli mindre deprimert. Det var svært delte meninger om hvorvidt det er greit å snakke om fugletitting på en tech-konferanse, hvor det ble hyllet av enkelt på internettet, mens vår egen Daniel Eriksson mente det var et hån mot konseptet JavaScript-konferanse.
 
-### Codemods in the Era of AI - Maja Wichrowska (Member of Technical Staff at OpenAI working with ChatGPT Client Infrastructure)
+### Codemods in the Era of AI
+
+Hvem: Maja Wichrowska
+Jobber med: Member of Technical Staff at OpenAI working with ChatGPT Client Infrastructure
 
 Case: noe endrer seg i et rammeverk og du må skrive om hele kodebasen. Hva gjør du?
 
@@ -231,7 +246,10 @@ Punkt fire og fem i kombinasjon er visst svaret. Det kan føles risikofylt å sl
 
 Så bruk AI til å skrive code mods, som kan testes og verifiseres, og bruk så dem trygt på de 90 prosentene av kodebasen som er enkel og grei.
 
-### Making Fonts Like It’s 1995! - Ulrike Rausch (Type designer and founder of LiebeFonts)
+### Making Fonts Like It’s 1995!
+
+Hvem: Ulrike Rausch
+Jobber med: Type designer and founder of LiebeFonts
 
 Se for deg Kristen Wiig, med tysk aksent, og stort engasjement for word art fra 90-tallet, så har du et greit bilde av vår siste foredragsholder.
 
@@ -241,10 +259,10 @@ Det var tøysete, ganske meningsløst, og på ekte morsomt. Hun prater med en ti
 
 > Aldri bruk bare én effekt
 
-- **video av waving text**
+- **video av waving text** ?
 
 ## Til slutt
 
-Vi avslutter dagen med å finne oss et bord i høyden, og er veldig fornøyde med å ha fått til det. Til slutt gir vi opp superplassen vår for karaoke, før halve gruppa danser litt til DJ'en, hele gruppa bretter litt origami, og vi til slutt drar hjem til svært anstendig tid. Erling får på søndag akkurat plass på flyet, vi kommer oss hjem gjennom Amy, og ser frem til neste Nordic JS.
+Vi avslutter dagen med å finne oss et bord i høyden, og er veldig fornøyde med å ha fått til det. Til slutt gir vi opp superplassen vår for karaoke, før halve gruppa danser litt til DJ'en, hele gruppa bretter litt origami, og vi til slutt drar hjem til svært anstendig tid. Erling får på søndag akkurat plass på flyet, vi kommer oss hjem gjennom Amy, og ser frem til neste Nordic.JS.
 
-- **Noe bilde fra avslutninga**
+- **Noe bilde fra avslutninga eller noe sånt**
