@@ -143,10 +143,146 @@ På dette tidspunktet var deler av gruppa trøtte og gira på å bli klar til da
 
 ## Frantzén
 
-"Er ni taggad"? Spørsmålet kom fra en av våre svenske servitører i entreen til Frantzén, Stockholms éne trestjerners restaurant. Og svaret var ja. Ja, vi var så definitivt taggad! Og med god grunn; det var restaurantopplevelse mange hakk over det jeg selv har opplevd før. Fra vannliljene i gangen, til belysning og Red Hot Chillipeppers i heisen, til Champagne og amuse-bouche i forværelset, hvor vi også fikk en tour av alle hovedinngrediensene framme hos kokkene. De andre Systekerne kunne i tillegg humre over dagens mest pinsamme situasjon, når Johan blandet sammen to av servitørene. Han reddet seg inn med litt lett rødmende stotring i ettertid, til mer glede for resten av gjengen.
+"Er ni taggad"? Spørsmålet, "er dere gira", kom fra en av våre svenske servitører i entreen til Frantzén, Stockholms éne trestjerners restaurant. Og svaret var ja. Ja, vi var så definitivt taggad! Og med god grunn; det var restaurantopplevelse mange hakk over det flere hadde opplevd før. Fra vannliljene i gangen, til belysning og Red Hot Chillipeppers i heisen, til Champagne og amuse-bouche i forværelset, hvor vi også fikk en tour av alle hovedinngrediensene framme hos kokkene. De andre Systekerne kunne i tillegg humre over dagens mest pinsamme situasjon, når Johan blandet sammen to av servitørene. Han reddet seg inn med litt lett rødmende stotring i etterkant, til mer glede for resten av gjengen.
 
-Deretter en omvisning av arbeidskjøkkenet og vinkjelleren, fylt med akkurat så eksklusiv vin som du skulle forvente, inn til spisesalen fylt med kokker, rolige som skjærer på tunet, i et nydelig rent og pent kjøkken, med gjestene spredd rundt dem i lokalet. Så til en fantastisk meny, til god vin, til god pairing av vinen til maten, til den åpenbart ikke innøvde vinkunnskapen, ettertestet med noen bonusspørsmål fra gruppas vinnørd, som somelierene virket å ha stor glede i å besvare presist og uten nøling. Kan kjenne jeg blir glad og nesten litt pinlig rørt her jeg gjenopplever det gjennom skrivinga. Et øyeblikk som stakk seg særlig ut var da vi seks gjestene, ble servert av seks servitører, og fikk seks perfekte retter perfekt koordinert foran oss. Du kunne føle Vivaldi i bakhodet, og opplevelsen av å være en del av en episode Chefs Table. Kult.
+Deretter en omvisning av arbeidskjøkkenet og vinkjelleren, fylt med akkurat så eksklusiv vin som du skulle forvente, inn til spisesalen fylt med kokker, rolige som skjærer på tunet, i et nydelig rent og pent kjøkken, med gjestene spredd rundt dem. Så til en fantastisk meny, til god vin, til god pairing av vinen til maten, til den åpenbart ikke innøvde vinkunnskapen, ettertestet med noen bonusspørsmål fra gruppas vinnørd, som sommelierene virket å ha stor glede i å besvare presist og uten nøling. Kan kjenne jeg blir glad og nesten litt rørt her jeg gjenopplever det gjennom skrivinga. Et øyeblikk som stakk seg særlig ut var da vi seks gjestene, ble servert av seks servitører, og fikk seks perfekte retter perfekt koordinert foran oss. Du kunne føle Vivaldi i bakhodet, og opplevelsen av å være en del av en episode Chefs Table. Kult.
 
-Til slutt tilbake opp i forværelset, til våre behagelige og tilbakelente sitteplasser, til en helt utrolig petit four, som Daniel spøkefult men super seriøst påpekte var mer av en grande huite og til slutt til en hinnsides regning som presset kredittkortgrensa til Karl, men likefullt betalt med stor glede etter at han og Hans Ole hviskende i hjørnet hadde kommet frem til et passende tips-nivå.
+Til slutt tilbake opp i forværelset, til våre behagelige og tilbakelente sitteplasser, til en helt utrolig petit four, som Daniel spøkefult men super seriøst påpekte var mer av en grand huit, og til slutt til en hinnsides regning som presset kredittkortgrensa til Karl, men likefullt ble betalt med stor glede etter at han og Hans Ole hviskende i hjørnet hadde kommet frem til et passende tips-nivå.
 
 Kvelden ble sedvanlig avsluttet på Karaoke-bar, hvor Siri som vanlig briljerte med alt hun tok i, og Erling gledet resten av oss med noen spesielt kreative sangvalg. Psycho Killer av Talking Heads lever stadig leiefritt i hodet mitt. En fa fa fa fa, fa fa fa fa fa, far better kveld enn man kanskje har noen rett til å ha.
+
+## Dag 2
+
+Med betydelig underskudd på søvn men upåklagelig mot, møtte vi opp til dag to av konferansen, for det som var den sterkeste dagen faglig.
+
+### Back to the future: of web development - Una Kravets (Google Chrome)
+
+Hva kan du gjøre med moderne HTML og CSS? Veldig mye kult viser det seg! Såpass mye at flere i gruppa følte på at de måtte hjem og skrive om appene sine. Alt fra avanserte karuseller til lagdelte layouts (les: popover), super-snappy, og helt uten JavaScript. Kanskje ironisk på en JS-conf, men å begrense bruken er også god bruk. Om du ikke er overbevist, her er noen gode argumenter til hvorfor:
+
+1. Det separerer logikk og styling
+2. Det redusere tredjeparts-avhengigheter
+3. Det reduserer vedlikehold
+4. Det gjør tilgjengelighet enklere
+5. Det forbedrer ytelse
+
+Så du kan bygge kjappere og gjøre livet enklere. Se ikke bort i fra at dette blir et tema å velge i for neste runde med faggrupper.
+
+### Shipping Node.js packages in 2025 - Joyee Cheung (Compilers team at Igalia, Node.js TSC member and V8 commiter)
+
+Vi er i 2025, men fortsatt shippes 60% av essensielle npm-pakker som Common JS, mot bare 10% som ES Modules. De resterende 30 prosentene shipper begge. Hvorfor? Flere grunner, blant annet at man ikke vil miste kompatibilitet, og dermed rekkevidde og bruk. Så da ender 30% opp med å støtte begge deler, noe som øker både kompleksitet og pakkestørrelse. Dermed har npm-pakkene dine som i utgangspunktet hadde mer masse en en neutronstjerne, nå doblet seg fra det igjen.
+
+- **node modules size meme**
+
+Det mest interessante er at dette faktisk ofte kan fikses enkelt. Den store hemmeligheten er at man kan require' esm(!?!).Folk misset bare memoet, og det gjorde kanskje også LLM'ene der ute? Kort oppsummert må du for å gå over fra dobbel shipping til bare esm:
+
+- Droppe top level awaits
+- Passe på å bruke extensions (typ: .js) i eksportene dine
+- Sette opp esm-shipping i package.json
+
+Du kan finne hele oppskriften og alt av detaljer i slidesettet [her](https://github.com/joyeecheung/talks/blob/master/nordic_js_2025/shipping-nodejs-packages-in-2025.pdf).
+
+Karl fikset forøvrig et par av sine pakker i løpet av de første dagene etter konferansen. High IQ move.
+
+### Pausetanker
+
+Dag to starter med to fagfokuserte foredrag. Det første er ypperste klasse av fremføring med et tema som også er lett og kult å demoe. Det andre er tungt og dypt, men tydelig og klart fremført med god og ryddig engelsk. Meg med flere datt kanskje litt ut og inn mot slutten, men gi meg heller mer av dét enn temaer plukket fra hype-toget. Rant over.
+
+### Yet Another Config File: introducing node.config.json - Marco Ippolito (Senior Security Engineer at HeroDevs, Node.js TSC member and TC39 delegate)
+
+Har du opplevd at skriptene i package blir overfylt av config-flag? Det er du i så fall ikke alene om, og med native features some test runner, watch mode og native typescript i node, er det ikke rart. Enter Node Config. Kort fortalt akkurat det det høres ut som: en config fil for å konfigurere node. En god og instruktiv prat om noe som kun kan bli en oppgradering (svært personlig mening).
+
+FAQ:
+
+- Gjør det oppstart av appen min tregere? Ja. I praksis: nei
+- Hvorfor json? Fordi det gir mening med javascript
+- Bør jeg publisere node.config.json-filen min? Nei
+- Er node.config produksjonsklar? Du kan bruke den, men breaking changes vil/kan komme
+- Kan jeg legge til custom konfigurasjon i den? Ja, men den vil ikke bli lest.
+
+Bonus: noen morsomme memes fra foredraget.
+
+- **morsom meme :the office - dwight sush**
+
+- **morsom meme: batmanaktig gul dude som ser på bilde av noe**
+
+### Badstuepause
+
+De hadde satt opp portable badstuer på området, så deler av gruppa sneik seg ut for badstue og bading i skjærgården under det neste foredraget.
+
+- **bilde av badstuefolk**
+
+### Past Time for Passkeys - Kyle Simpson (Creator of the "You Don't Know JS" book series)
+
+Konferansens superstjerne blir jeg fortalt av Erling og Karl mens vi tar en pils på togstasjonen før avgang. Han operer i alle fall som en ringrev i game'et med stor trygghet og bra med humor. Han starter med å hamrer at
+
+- Passord er for noobs
+- Det er enda mer noobete med passkoder eller magiske lenker på sms og epost
+- Passord resets er dårlig
+- Sikkerhetsspørsmål er forferdelig
+- SSO er dårlig
+- Captchas er dårlig
+- Kort sagt er alt av standard inloggingsteknologi dårlig
+
+Og dårlig er både dårlig UX og dårlig sikkerhet. Det som derimot er helt konge er biometrisk innlogging. Det lagres trygt lokalt og funker trygt og ikke minst brukervennlig. Passkeys er noe så enkelt som biometrisk innlogging for web-apper, så du har en ting å gjøre, hvilket er å ta det i asap.
+
+For å være litt mer balansert, presenterer han etter hvert noen fordeler og ulemper også:
+
+positive sider:
+
+- Passkeys er mer private
+- Passkeys er sikrere
+- Det er godt kjent for brukeren (selv om navnet kan være dårlig/ukjent)
+- UX er mye mer strømlinjeformet
+
+negative sider:
+
+- Brukeropplæring (både lære å stole på og å bruke)
+- Brukerens byrde med oppsett
+- Brukerens ansvar å bruke riktig (f.eks. å ikke bare ha det på én enhet)
+- Fortsatt under utvikling
+
+Noen fine ressurser på temaet:
+
+- passkeys.com
+- passkeys playground
+- passkey garden
+
+### Lightning talks
+
+Lightning talks er ikke mitt favorittkonsept. Mest av alt fordi det er lite verifisering av kvalitet, og jeg blir lett pinlig berørt av manglende kvalitet på scenen. Det beste med lightning talks er sånn sett at smerten er kjapt over. Kvaliteten på foredragene var dog tålelig gode, med bra pace og generelt god engelsk og ikke for mange, lange, vonde forsøk på å bryte tidsrammene. Kult av de som tar sjansen også.
+
+Spesielt omdiskutert var hun som snakket om fugletitting (bare kalt birding i miljøet). Det var en passe påtatt, tørrvittig oppfordring om å være mer med naturen og bli mindre deprimert. Det var svært delte meninger om hvorvidt det er greit å snakke om fugletitting på en tech-konferanse, hvor det ble hyllet av enkelt på internettet, mens vår egen Daniel Eriksson mente det var et hån mot konseptet JavaScript-konferanse.
+
+### Codemods in the Era of AI - Maja Wichrowska (Member of Technical Staff at OpenAI working with ChatGPT Client Infrastructure)
+
+Case: noe endrer seg i et rammeverk og du må skrive om hele kodebasen. Hva gjør du?
+
+1. Ingenting
+2. Lager en eslint-regel
+3. Starter et 6 måneder lang prosjekt med buy in fra ledelsen
+4. Ber AI om å gjøre det
+5. Skriver en code mod
+
+Maja, med konferansens mest utfordrende etternavn for konferansierene, snakket litt om kombinasjonen av 4 og 5.
+
+Utfordringa. Når man ikke vet hvordan AI tenker, kan det føles risikofylt å slippe den løs på en stor kodeendring der du ikke kan verifisere alle linjer. Derfor kan du i stedet bruke codemods:
+
+1. Gjør migrasjonen manuelt et par ganger
+2. Lag en steg-for-steg-algoritme
+3. Skaler algoritmen med verktøyene du har
+
+Så bruk AI til å skrive code mods, som kan testes og verifiseres, og bruk så dem trygt på de 90 prosentene av kodebasen som er enkel og grei.
+
+### Word art
+
+Se for deg Kristen Wiig, med tysk aksent, og stort engasjement for font art fra 90-tallet, så har du et greit bilde av vårt siste foredrag.
+
+![Energien, språket og faktene til siste foredragsholder matchet godt med Kristen Wiig ](../bilder/kristenwiig.gif)
+
+Det var på ekte morsomt, tøysete, ganske meningsløst og veldig morsomt. Hun prater med en tidvis hviskende, insinuerende stil, som om vi gjør noe litt ulovlig, og guider oss stødig gjennom hvordan man kan lage de festligste fonter til weben. Hun fikk publikum til å ta bølgen, sammen med bølgene i den ene fonten, med følelsen av at salen faktisk likte å være med på det. Det siste vi tar med oss hjem fra konferanse er den gyldne regel innen font art:
+
+> Aldri bruk bare én effekt
+
+## Til slutt
+
+Vi avslutter dagen med å finne oss et bord i høyden, og er veldig fornøyde med å ha fått til det. Til slutt gir vi opp superplassen vår for Karaoke, før halve gruppa danser litt til DJ'en, hele gruppa gjør litt origami, og vi til slutt drar hjem til svært anstendig tid. Erling får akkurat plass på flyet, vi kommer oss hjem gjennom Amy, og vi ser frem til neste Nordic JS.
