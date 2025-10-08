@@ -46,7 +46,7 @@ Av nevneverdige forslag som ligger i pipeline (finn norsk ord) finner vi blant a
 
 Å få sponset kaffepausene er penger man ikke kan si nei til, men det føyer seg like fullt inn i rekken av Lexus pause-prater og Intility arenaer, som jeg ikke er noen stor fan av. Jaja. Gode kanelboller var det i alle fall selv om Daniel syntes de var litt vel klissete, noe det var vanskelig å være uenig i. I-landsproblemer der altså. Karl prøvde ut ballbingen.
 
-![](/bilder/reisebrev_fra_nordicjs_2025/karliballbingen.png)
+![](/bilder/reisebrev_fra_nordicjs_2025/karliballbingen2.jpg)
 
 ### Look ma, no hands! Multimodal AI-Agents in the browser
 
@@ -257,4 +257,4 @@ Det var tøysete, ganske meningsløst, og på ekte morsomt. Hun prater med en ti
 
 Vi avslutter dagen med å finne oss et bord i høyden, og er veldig fornøyde med å ha fått til det. Til slutt gir vi opp superplassen vår for karaoke, før halve gruppa danser litt til DJ'en, hele gruppa bretter litt origami, og vi til slutt drar hjem til svært anstendig tid. Erling får på søndag akkurat plass på flyet, vi kommer oss hjem gjennom Amy, og ser frem til neste Nordic.JS.
 
-![](/bilder/reisebrev_fra_nordicjs_2025/systekvarher.png)
+![](/bilder/reisebrev_fra_nordicjs_2025/systekvarher3.png)
