@@ -18,7 +18,7 @@ En bra gjeng hadde gått inn for landing, og vi var klare for fag, og litt hygge
 
 Vi kommer oss opp etter litt for lite søvn, spiser frokost, og tar en bitteliten maxitaxi til magasin 9. Etter å ha sjekket inn er vi klar for åpning.
 
-![](/bilder/reisebrev_fra_nordicjs_2025/gjengenitaxi2.png)
+![](/bilder/reisebrev_fra_nordicjs_2025/gjengenitaxi.png)
 
 Årets verter er hyggelige og passe kleine, med innøvde, passe dårlige utvikler-jokes. Det informeres om nødutganger, tidsskjema og om hva som skjer når du går over tiden som foredragsholder: klassisk musikk (hvilken?) begynner først subtilt før det blir høyere og til slutt veldig høyt. Da er det på tide å komme seg av. Til undertegnedes store glede var det heldigvis ikke noen som tøyde strikken unødig langt.
 
