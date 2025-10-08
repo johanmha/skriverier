@@ -46,7 +46,7 @@ Av nevneverdige forslag som ligger i pipeline (finn norsk ord) finner vi blant a
 
 Å få sponset kaffepausene er penger man ikke kan si nei til, men det føyer seg like fullt inn i rekken av Lexus pause-prater og Intility arenaer, som jeg ikke er noen stor fan av. Jaja. Gode kanelboller var det i alle fall selv om Daniel syntes de var litt vel klissete, noe det var vanskelig å være uenig i. I-landsproblemer der altså. Karl prøvde ut ballbingen.
 
-![](/bilder/reisebrev_fra_nordicjs_2025/karliballbingen2.jpg)
+![](/bilder/reisebrev_fra_nordicjs_2025/karliballbingen.png)
 
 ### Look ma, no hands! Multimodal AI-Agents in the browser
 
