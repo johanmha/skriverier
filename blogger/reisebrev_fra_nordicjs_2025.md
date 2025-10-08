@@ -257,4 +257,4 @@ Det var tøysete, ganske meningsløst, og på ekte morsomt. Hun prater med en ti
 
 Vi avslutter dagen med å finne oss et bord i høyden, og er veldig fornøyde med å ha fått til det. Til slutt gir vi opp superplassen vår for karaoke, før halve gruppa danser litt til DJ'en, hele gruppa bretter litt origami, og vi til slutt drar hjem til svært anstendig tid. Erling får på søndag akkurat plass på flyet, vi kommer oss hjem gjennom Amy, og ser frem til neste Nordic.JS.
 
-![](/bilder/reisebrev_fra_nordicjs_2025/systekvarher3.png)
+![](/bilder/reisebrev_fra_nordicjs_2025/systekvarher4.png)
