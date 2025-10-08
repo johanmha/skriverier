@@ -6,7 +6,7 @@ published:
 
 # Reisebrev fra Nordic.JS 2025
 
-![](../bilder/reisebrev_fra_nordicjs_2025/gjengenpafrantzen.png)
+![](../bilder/reisebrev_fra_nordicjs_2025/croppedgjengenpåfrantzen.png)
 
 ## Vi reiser
 
@@ -20,7 +20,7 @@ Vi kommer oss opp etter litt for lite søvn, spiser frokost, og tar en bittelite
 
 ![](/bilder/reisebrev_fra_nordicjs_2025/gjengenitaxi.png)
 
-Årets verter er hyggelige og passe kleine, med innøvde, passe dårlige utvikler-jokes. Det informeres om nødutganger, tidsskjema og om hva som skjer når du går over tiden som foredragsholder: klassisk musikk (hvilken?) begynner først subtilt før det blir høyere og til slutt veldig høyt. Da er det på tide å komme seg av. Til undertegnedes store glede var det heldigvis ikke noen som tøyde strikken unødig langt.
+Årets verter er hyggelige og passe kleine, med innøvde, passe dårlige utvikler-jokes. Det informeres om nødutganger, tidsskjema og om hva som skjer når du går over tiden som foredragsholder: Maurice Ravels [Boléro](https://open.spotify.com/track/3KtsRijwp8KunCRYlOdWEi?si=6fec194f32894392) begynner først subtilt før den blir høyere og til slutt veldig høy. Da er det på tide å komme seg av. Til undertegnedes store glede var det heldigvis ikke noen som tøyde strikken unødig langt.
 
 Ellers er det badstue utenfor, vertene har grønne jakker og vi er klare til å komme i gang.
 
@@ -47,7 +47,7 @@ Av nevneverdige forslag som ligger i pipeline (finn norsk ord) finner vi blant a
 
 Å få sponset kaffepausene er penger man ikke kan si nei til, men det føyer seg like fullt inn i rekken av Lexus pause-prater og Intility arenaer, som jeg ikke er noen stor fan av. Jaja. Gode kanelboller var det i alle fall selv om Daniel syntes de var litt vel klissete, noe det var vanskelig å være uenig i. I-landsproblemer der altså. Karl prøvde ut ballbingen.
 
-![](/bilder/reisebrev_fra_nordicjs_2025/karliballbingen.png)
+![](/bilder/reisebrev_fra_nordicjs_2025/karliballbingenedit.png)
 
 ### Look ma, no hands! Multimodal AI-Agents in the browser
 
