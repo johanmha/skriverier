@@ -6,7 +6,7 @@ published:
 
 # Reisebrev fra Nordic.JS 2025
 
-- **bilde av gjengen**
+![](../bilder/reisebrev_fra_nordicjs_2025/gjengenpafrantzen.png)
 
 ## Vi reiser
 
@@ -18,7 +18,7 @@ En bra gjeng hadde gått inn for landing, og vi var klare for fag, og litt hygge
 
 Vi kommer oss opp etter litt for lite søvn, spiser frokost, og tar en bitteliten maxitaxi til magasin 9. Etter å ha sjekket inn er vi klar for åpning.
 
-- **bilde fra taxituren**
+![](/bilder/reisebrev_fra_nordicjs_2025/gjengenitaxi.png)
 
 Årets verter er hyggelige og passe kleine, med innøvde, passe dårlige utvikler-jokes. Det informeres om nødutganger, tidsskjema og om hva som skjer når du går over tiden som foredragsholder: klassisk musikk (hvilken?) begynner først subtilt før det blir høyere og til slutt veldig høyt. Da er det på tide å komme seg av. Til undertegnedes store glede var det heldigvis ikke noen som tøyde strikken unødig langt.
 
@@ -31,7 +31,7 @@ Jobber med: Head of Developer Relations at Deno
 
 Etter en kort intro om hvor vanskelig det er å velge musikk å entre scenen til, setter han i gang med en historisk oversikt over JavaScripts utvikling. Hovedpoenget hans virker å være at det strengt tatt ikke er JavaScripts™ men ECMAScripts historie. Dette får han frem med små slengere i retning Oracle hvor de passer inn. Hovedbudskapet blir litt spist opp av at han går godt over tiden, får dagens første du-er-over-tiden-musikk, og må rushe de siste slidene. Anbefaler å sjekke opp Denos kamp mot Goliat (Oracle) [her](https://deno.com/blog/javascript-tm-gofundme). Kort oppsummert vil de ugyldiggjøre Oracle sitt eierskap til JavaScript på vegne av oss alle, slik at konferansen kunne hett Nordic JavaScript. Du kan støtte den juridiske prosessen [her](https://www.gofundme.com/f/help-us-challenge-oracles-javascript-trademark/donate).
 
-- **I am doing my part gif**
+![](/bilder/reisebrev_fra_nordicjs_2025/iamdoingmypart.gif)
 
 ### What's up in ES2027
 
@@ -42,11 +42,11 @@ Etter litt historie var det nå tid for å se fremover. Christophe minner oss f�
 
 Av nevneverdige forslag som ligger i pipeline (finn norsk ord) finner vi blant annet [Temporal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Temporal), eller native tid- og dato-håndtering. Det blir forhåpentligvis slutten for mange tredjeparts-biblioteker som date-fns, når det endelig blir godkjent. Gleder meg. [Her](https://github.com/tc39/proposals) er forresten alle proposals som er og har vært, og [her](https://tc39.es/process-document/) er prosessen for å få noe inn i standarden.
 
-### Fika sposored by...
+### Fika sponsored by...
 
 Å få sponset kaffepausene er penger man ikke kan si nei til, men det føyer seg like fullt inn i rekken av Lexus pause-prater og Intility arenaer, som jeg ikke er noen stor fan av. Jaja. Gode kanelboller var det i alle fall selv om Daniel syntes de var litt vel klissete, noe det var vanskelig å være uenig i. I-landsproblemer der altså. Karl prøvde ut ballbingen.
 
-- **Karl i ballbingen**
+![](/bilder/reisebrev_fra_nordicjs_2025/karliballbingen.png)
 
 ### Look ma, no hands! Multimodal AI-Agents in the browser
 
@@ -84,7 +84,7 @@ Jobber med: Engineering Manager at Rebtel
 
 Web på 90-tallet var ikke tilgjengelig:
 
-- **bilde av utilgjengelig web fra 90-tallet**
+![](/bilder/reisebrev_fra_nordicjs_2025/utilgjengeligwebdesign.png)
 
 Men nå kan den og bør den være det. Kort oppsummert skal alle kunne oppfatte, forstå, navigere, interagere og bidra på nettsider. Pass på at dine nettsider også følger det, for én dag sitter du der og har nedsatt funksjon selv (les: dårlig syn, leddgikt og dårlig hørsel. Eventuelt bare dårlig belysning, skitten skjerm, støyete omgivelser og alt mulig annet). Du kan finne ut mye [her for eksempel](https://www.uutilsynet.no/regelverk/regelverk-og-krav/746), eller her hos [The A11y Project](https://www.a11yproject.com/posts/).
 
@@ -99,7 +99,7 @@ Jobber med: Developer Advocate at Auth0
 
 Referansen "the cake is a lie" kommer fra spillet Portal, som kom ut en gang for over 20 år siden.
 
-- **the cake is a lie-bilde**
+![](/bilder/reisebrev_fra_nordicjs_2025/thecakeisalie.png)
 
 Spillet er en personlig favoritt, og referansen er alltid godt mottatt, men alle kjenner den nok ikke. Når referansen ledet inn i en lengre historie/metafor som i tillegg var rotete gjennomført, ble det til en ganske lang seksjon som neppe var veldig tilgjengelig for de fleste. Hun reddet seg inn i andre halvdel når hun viste med eksempler at login-sider ikke alltid er like tilgjengelige.
 
@@ -133,15 +133,15 @@ På dette tidspunktet var deler av gruppa trøtte og gira på å bli klar til da
 
 "Är ni taggad"? Spørsmålet, "er dere gira", kom fra en av våre svenske servitører i entreen til Frantzén. Svaret var ja. Ja, vi var så definitivt taggad! Og med god grunn; det var restaurantopplevelse mange hakk over det de mange av oss hadde opplevd før. Fra vannliljer i gangen, til belysning og Red Hot Chillipeppers i heisen, til Champagne og amuse-bouche i lounge'en, hvor vi også fikk en tour av alle hovedingrediensene framme hos kokkene. De andre Systekerne kunne i tillegg humre over dagens mest pinlige situasjon, da Johan blandet sammen to av servitørene ved å stille oppfølgingsspørsmål om champagnen til en ny person uten å få det med seg. Han reddet seg inn med litt lett rødmende stotring i etterkant, til mer glede for resten av gjengen.
 
-- **Bilder fra loungen**
+![](/bilder/reisebrev_fra_nordicjs_2025/makronerogloyrom.png)
 
 Deretter kom en omvisning av arbeidskjøkkenet og vinkjelleren, fylt med akkurat så eksklusiv vin som du skulle forvente. Så inn i spisesalen fylt med kokker, rolige som skjærer på tunet, i et nydelig rent og pent kjøkken, med gjestene spredd rundt dem. Så til en fantastisk meny, til god vin, til god parring av vinen og maten, til den åpenbart ikke innøvde vinkunnskapen, ettertestet med noen bonusspørsmål fra gruppas vinnørd, besvart presist og uten nøling fra sommelierene. Et øyeblikk som stakk seg særlig ut var da de seks gjestene (oss), ble servert av seks servitører, og fikk seks perfekte retter perfekt koordinert foran oss. Du kunne føle Vivaldi spille i bakgrunnen, og kjenne på opplevelsen av å være en del av en episode Chefs Table. Kult.
 
-- **Masse bilder (mat, vin etc)**
+![](/bilder/reisebrev_fra_nordicjs_2025/viner.png)
 
 Til slutt tilbake opp i lounge'en, til våre behagelige og tilbakelente sitteplasser, til en helt utrolig petit four, som Daniel spøkefult men super seriøst påpekte var mer av en grand huit, og til slutt regningen som ble betalt av Karl, etter at han og Hans Ole hviskende i hjørnet hadde kommet frem til et passende tipsnivå.
 
-- **Bilde av regning og grand huit**
+![](/bilder/reisebrev_fra_nordicjs_2025/grandhuit.png)
 
 Kvelden ble sedvanlig avsluttet på karaoke-bar, hvor Siri som vanlig briljerte med alt hun tok i, og Erling gledet resten av oss med noen spesielt kreative sangvalg. Psycho Killer av Talking Heads lever stadig leiefritt i hodet mitt.
 
@@ -164,8 +164,6 @@ Hva kan du gjøre med moderne HTML og CSS? Veldig mye kult viser det seg! Såpas
 
 Så du kan bygge kjappere, og gjøre livet enklere. Se ikke bort i fra at dette blir et tema å velge i på neste runde med faggrupper.
 
-- **Bilde av kule ting man kan gjøre med HTML/CSS** (?)
-
 ### Shipping Node.js packages in 2025
 
 Hvem: Joyee Cheung
@@ -173,7 +171,7 @@ Jobber med: Compilers team at Igalia, Node.js TSC member and V8 commiter
 
 Vi er i 2025, men fortsatt shippes 60% av essensielle npm-pakker som Common JS, mot bare 10% som ES Modules. De resterende 30 prosentene shipper begge. Hvorfor? Flere grunner, blant annet at man ikke vil brekke apper, og dermed miste rekkevidde og bruk. Så da ender 30% opp med å støtte begge deler, noe som øker både kompleksitet og pakkestørrelse. Dermed har npm-pakkene dine som i utgangspunktet hadde mer masse en en neutronstjerne, nå doblet seg fra det igjen.
 
-- **node modules size meme**
+![](/bilder/reisebrev_fra_nordicjs_2025/nodemodulesmeme.webp)
 
 Det mest interessante er at dette faktisk ofte kan fikses enkelt. Den store hemmeligheten er at man kan gjøre require av esm(!?!). Folk misset bare memoet, og det gjorde kanskje også LLM'ene der ute? Kort oppsummert må du for å gå over fra dobbel shipping til bare esm:
 
@@ -194,15 +192,11 @@ Jobber med: Senior Security Engineer at HeroDevs, Node.js TSC member and TC39 de
 
 Har du opplevd at skriptene i package blir overfylt av config-flag? Det er du i så fall ikke alene om, og med native features some test runner, watch mode og native typescript i node, er ikke det så rart. Enter Node Config. Kort fortalt akkurat det det høres ut som: en config fil for å konfigurere node. En god og instruktiv prat om noe som kun kan bli en oppgradering.
 
-Bonus: morsom memes fra foredraget.
-
-- **morsom meme: batmanaktig gul dude som ser på bilde av noe**
-
 ### Badstuepause
 
 De hadde satt opp portable badstuer på området, så deler av gruppa sneik seg ut for badstue og bading i skjærgården under det neste foredraget.
 
-- **bilde av badstuefolk**
+![](/bilder/reisebrev_fra_nordicjs_2025/badstuere.png)
 
 ### Past Time for Passkeys
 
@@ -253,16 +247,14 @@ Jobber med: Type designer and founder of LiebeFonts
 
 Se for deg Kristen Wiig, med tysk aksent, og stort engasjement for word art fra 90-tallet, så har du et greit bilde av vår siste foredragsholder.
 
-![](../bilder/kristenwiig.gif)
+![](../bilder/reisebrev_fra_nordicjs_2025/kristenwiig.gif)
 
 Det var tøysete, ganske meningsløst, og på ekte morsomt. Hun prater med en tidvis hviskende, insinuerende stil, som om vi gjør noe litt ulovlig, og guider oss stødig gjennom hvordan man kan lage de festligste fonter til weben. Hun fikk publikum til å ta bølgen, sammen med bølgene i den ene fonten, med følelsen av at salen faktisk likte å være med på det. Det siste vi tar med oss hjem fra konferanse er den gyldne regel innen word art:
 
 > Aldri bruk bare én effekt
 
-- **video av waving text** ?
-
 ## Til slutt
 
 Vi avslutter dagen med å finne oss et bord i høyden, og er veldig fornøyde med å ha fått til det. Til slutt gir vi opp superplassen vår for karaoke, før halve gruppa danser litt til DJ'en, hele gruppa bretter litt origami, og vi til slutt drar hjem til svært anstendig tid. Erling får på søndag akkurat plass på flyet, vi kommer oss hjem gjennom Amy, og ser frem til neste Nordic.JS.
 
-- **Noe bilde fra avslutninga eller noe sånt**
+![](/bilder/reisebrev_fra_nordicjs_2025/systekvarher.png)
