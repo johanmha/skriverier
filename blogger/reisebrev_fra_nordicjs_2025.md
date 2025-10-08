@@ -41,7 +41,7 @@ Etter en kort intro om hvor vanskelig det er å velge musikk å entre scenen til
 
 Etter litt historie var det nå tid for å se fremover. Christophe minner oss først på at [ECMAScript er standarden JavaScript er basert på](https://developer.mozilla.org/en-US/docs/Glossary/ECMAScript) og at man må hive seg på kampen mot Oracle.
 
-Av nevneverdige forslag som ligger i pipeline (finn norsk ord) finner vi blant annet [Temporal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Temporal), eller native tid- og dato-håndtering. Det blir forhåpentligvis slutten for mange tredjeparts-biblioteker som date-fns, når det endelig blir godkjent. Gleder meg. [Her](https://github.com/tc39/proposals) er forresten alle proposals som er og har vært, og [her](https://tc39.es/process-document/) er prosessen for å få noe inn i standarden.
+Av nevneverdige forslag som ligger i pipeline (finn norsk ord) finner vi blant annet [Temporal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Temporal), eller native tid- og dato-håndtering. Det blir forhåpentligvis slutten for mange tredjepartsbiblioteker som date-fns, når det endelig blir godkjent. Gleder meg. [Her](https://github.com/tc39/proposals) er forresten alle proposals som er og har vært, og [her](https://tc39.es/process-document/) er prosessen for å få noe inn i standarden.
 
 ### Fika sponsored by...
 
@@ -155,15 +155,15 @@ Med betydelig underskudd på søvn men upåklagelig mot, møtte vi opp til dag t
 - Hvem: Una Kravets
 - Jobber med: Leads the Web UI DevRel team at Google Chrome
 
-Hva kan du gjøre med moderne HTML og CSS? Veldig mye kult viser det seg! Såpass mye at flere i gruppa følte på at de måtte hjem og skrive om appene sine sporenstreks. Alt fra avanserte karuseller til lagdelte layouts (les: popover), super-snappy, og helt uten JavaScript. Kanskje ironisk på en JS-conf, men å begrense bruken er også god bruk. Om du ikke er overbevist, her er noen gode argumenter for:
+Hva kan du gjøre med moderne HTML og CSS? Veldig mye kult viser det seg! Såpass mye at flere i gruppa følte på at de måtte hjem og skrive om appene sine sporenstreks. Alt fra avanserte karuseller til lagdelte layouts (les: popover), supersnappy, og helt uten JavaScript. Kanskje ironisk på en JS-conf, men å begrense bruken er også god bruk. Om du ikke er overbevist, her er noen gode argumenter for:
 
 1. Det separerer logikk og styling
-2. Det redusere tredjeparts-avhengigheter
+2. Det redusere tredjepartsavhengigheter
 3. Det reduserer vedlikehold
 4. Det gjør tilgjengelighet enklere
 5. Det forbedrer ytelse
 
-Så du kan bygge kjappere, og gjøre livet enklere. Se ikke bort i fra at dette blir et tema å velge i på neste runde med faggrupper.
+Så du kan bygge kjappere, og gjøre livet enklere.
 
 ### Shipping Node.js packages in 2025
 
@@ -171,14 +171,16 @@ Så du kan bygge kjappere, og gjøre livet enklere. Se ikke bort i fra at dette 
 - Jobber med: Compilers team at Igalia, Node.js TSC member and V8 commiter
 - [Slidesett](https://github.com/joyeecheung/talks/blob/master/nordic_js_2025/shipping-nodejs-packages-in-2025.pdf)
 
-Vi er i 2025, men fortsatt shippes 60% av essensielle npm-pakker som Common JS, mot bare 10% som ES Modules. De resterende 30 prosentene shipper begge. Hvorfor? Flere grunner, blant annet at man ikke vil brekke apper, og dermed miste rekkevidde og bruk. Så da ender 30% opp med å støtte begge deler, noe som øker både kompleksitet og pakkestørrelse. Dermed har npm-pakkene dine som i utgangspunktet hadde mer masse en en neutronstjerne, nå doblet seg fra det igjen.
+Vi er i 2025, men fortsatt shippes 60 % av essensielle npm-pakker som Common JS, mot bare 10 % som ES Modules. De resterende 30 prosentene shipper begge. Hvorfor? Flere grunner, blant annet at man ikke vil brekke apper, og dermed miste rekkevidde og bruk. Å støtte begge deler øker både kompleksitet og pakkestørrelse, og dermed har npm-pakkene dine som i utgangspunktet hadde mer masse enn en neutronstjerne, blitt enda større.
 
 ![](/bilder/reisebrev_fra_nordicjs_2025/nodemodulesmeme.webp)
 
-Det mest interessante er at dette faktisk ofte kan fikses enkelt. Den store hemmeligheten er at man kan gjøre require av esm(!?!). Folk misset bare memoet, og det gjorde kanskje også LLM'ene der ute? Kort oppsummert må du for å gå over fra dobbel shipping til bare esm:
+Det mest interessante er at dette faktisk ofte kan fikses enkelt. Den store hemmeligheten er at man kan gjøre require av esm(!?!). Folk fikk bare ikke med seg notisen, og det gjorde kanskje heller ikke LLM'ene der ute?
+
+Kort oppsummert må du gjøre følgende for å gå over fra dobbel shipping til bare esm:
 
 - Droppe top level awaits
-- Passe på å bruke extensions (typ: .js) i eksportene dine
+- Passe på å bruke filendinger i eksportene dine
 - Sette opp esm-shipping i package.json
 
 Du kan finne hele oppskriften og alt av detaljer i slidesettet. Karl fikset forøvrig et par av sine pakker i løpet av de første dagene etter konferansen. High IQ move.
@@ -189,11 +191,10 @@ Dag to starter med to fagfokuserte foredrag. Det første er ypperste klasse av f
 
 ### Yet Another Config File: introducing node.config.json
 
-Hvema. Marco Ippolito
-
+- Hvem: Marco Ippolito
 - Jobber med: Senior Security Engineer at HeroDevs, Node.js TSC member and TC39 delegate
 
-Har du opplevd at skriptene i package blir overfylt av config-flag? Det er du i så fall ikke alene om, og med native features some test runner, watch mode og native typescript i node, er ikke det så rart. Enter Node Config. Kort fortalt akkurat det det høres ut som: en config fil for å konfigurere node. En god og instruktiv prat om noe som kun kan bli en oppgradering.
+Har du opplevd at skriptene i package blir overfylt av konfigflag? Det er du i så fall ikke alene om, og med native features some test runner, watch mode og native TypeScript i node, er ikke det så rart. Enter Node Config. Kort fortalt akkurat det det høres ut som: en config-fil for å konfigurere node. En god og instruktiv prat om noe som kun kan bli en oppgradering.
 
 ### Badstuepause
 
@@ -206,21 +207,21 @@ De hadde satt opp portable badstuer på området, så deler av gruppa sneik seg 
 - Hvem: Kyle Simpson
   Kjent fra: Creator of the "You Don't Know JS" book series
 
-Konferansens superstjerne blir jeg fortalt av Erling og Karl mens vi tar en pils på togstasjonen før avgang. Han operer i alle fall som en ringrev i game'et med stor trygghet og bra med humor. Han starter med å hamrer inn at
+Konferansens superstjerne blir jeg fortalt av Erling og Karl mens vi tar en pils på togstasjonen før avgang. Han operer i alle fall som en ringrev i gamet med stor trygghet og bra med humor. Han starter med å hamrer inn at
 
-- Passord er for noobs
-- Det er enda mer noob'ete med koder eller magiske lenker på sms og epost
-- Passord resets er dårlig
-- Sikkerhetsspørsmål er forferdelig
+- passord er for noobs
+- det er enda mer noobete med koder eller magiske lenker på SMS og e-post
+- passord-resets er dårlig
+- sikkerhetsspørsmål er forferdelig
 - SSO er dårlig
-- Captchas er dårlig
-- Kort sagt er alt av standard inloggingsteknologi dårlig
+- captchas er dårlig
+- kort sagt er alt av standard inloggingsteknologi dårlig
 
-Hvor dårlig betyr både dårlig UX og dårlig sikkerhet. Det som derimot er helt konge er biometrisk innlogging. Det lagres trygt lokalt og funker trygt og ikke minst brukervennlig. Passkeys er noe så enkelt som biometrisk innlogging for web-apper. Du har én ting å gjøre nå, hvilket er å ta passkeys i bruk asap.
+Hvor dårlig betyr både dårlig UX og dårlig sikkerhet. Det som derimot er helt konge er biometrisk innlogging. Det lagres trygt lokalt og funker trygt og ikke minst brukervennlig. Passkeys er noe så enkelt som biometrisk innlogging for web-apper. Du har én ting å gjøre nå, hvilket er å ta passkeys i bruk ASAP.
 
 ### Lightning talks
 
-Kjappe prater av konfernasedeltakere. Spesielt omdiskutert var hun som snakket om fugletitting. Det var en passe påtatt, tørrvittig oppfordring om å være mer med naturen og bli mindre deprimert. Det var svært delte meninger om hvorvidt det er greit å snakke om fugletitting på en tech-konferanse, hvor det ble hyllet av enkelt på Internettet, mens vår egen Daniel Eriksson mente det var et hån mot konseptet JavaScript-konferanse.
+Kjappe prater av konferansedeltakere. Kan trekke fram at en norsk utviklerkollega fra Ark snakket om fugletitting. Det var en passe påtatt, tørrvittig oppfordring om å være mer med naturen og bli mindre deprimert.
 
 ### Codemods in the Era of AI
 
@@ -244,6 +245,6 @@ Det var tøysete, ganske meningsløst, og på ekte morsomt. Hun prater med en ti
 
 ## Til slutt
 
-Vi avslutter dagen med å finne oss et bord i høyden, og er veldig fornøyde med å ha fått til det. Til slutt gir vi opp superplassen vår for karaoke, før halve gruppa danser litt til DJ'en, hele gruppa bretter litt origami, og vi til slutt drar hjem til svært anstendig tid. Erling får på søndag akkurat plass på flyet, vi kommer oss hjem gjennom Amy, og ser frem til neste Nordic.JS.
+Vi avslutter dagen med å finne oss et bord i høyden, og er veldig fornøyde med å ha fått til det. Til slutt gir vi opp superplassen vår for karaoke, før halve gruppa danser litt til DJ-en, hele gruppa bretter litt origami, og vi til slutt drar hjem til svært anstendig tid. Erling får på søndag akkurat plass på flyet, vi kommer oss hjem gjennom Amy, og ser frem til neste Nordic.JS.
 
 ![](/bilder/reisebrev_fra_nordicjs_2025/systekvarher4.png)
