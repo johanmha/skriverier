@@ -18,7 +18,7 @@ En bra gjeng hadde gått inn for landing, og vi var klare for fag, og litt hygge
 
 Vi kommer oss opp etter litt for lite søvn, spiser frokost, og tar en bitteliten maxitaxi til magasin 9. Etter å ha sjekket inn er vi klar for åpning.
 
-![](/bilder/reisebrev_fra_nordicjs_2025/gjengenitaxi.png)
+![](/bilder/reisebrev_fra_nordicjs_2025/gjengenitaxi2.png)
 
 Årets verter er hyggelige og passe kleine, med innøvde, passe dårlige utvikler-jokes. Det informeres om nødutganger, tidsskjema og om hva som skjer når du går over tiden som foredragsholder: klassisk musikk (hvilken?) begynner først subtilt før det blir høyere og til slutt veldig høyt. Da er det på tide å komme seg av. Til undertegnedes store glede var det heldigvis ikke noen som tøyde strikken unødig langt.
 
@@ -213,7 +213,7 @@ Konferansens superstjerne blir jeg fortalt av Erling og Karl mens vi tar en pils
 - Captchas er dårlig
 - Kort sagt er alt av standard inloggingsteknologi dårlig
 
-Og dårlig er både dårlig UX og dårlig sikkerhet. Det som derimot er helt konge er biometrisk innlogging. Det lagres trygt lokalt og funker trygt og ikke minst brukervennlig. Passkeys er noe så enkelt som biometrisk innlogging for web-apper. Du har én ting å gjøre nå, hvilket er å ta passkeys i bruk asap.
+Hvor dårlig betyr både dårlig UX og dårlig sikkerhet. Det som derimot er helt konge er biometrisk innlogging. Det lagres trygt lokalt og funker trygt og ikke minst brukervennlig. Passkeys er noe så enkelt som biometrisk innlogging for web-apper. Du har én ting å gjøre nå, hvilket er å ta passkeys i bruk asap.
 
 ### Lightning talks
 
@@ -224,21 +224,7 @@ Kjappe prater av konfernasedeltakere. Spesielt omdiskutert var hun som snakket o
 Hvem: Maja Wichrowska
 Jobber med: Member of Technical Staff at OpenAI working with ChatGPT Client Infrastructure
 
-Case: noe endrer seg i et rammeverk og du må skrive om hele kodebasen. Hva gjør du?
-
-1. Ingenting
-2. Lager en eslint-regel
-3. Starter et 6 måneder lang prosjekt med buy in fra ledelsen
-4. Ber KI om å gjøre det
-5. Skriver en code mod
-
-Punkt fire og fem i kombinasjon er visst svaret. Det kan føles risikofylt å slippe den KI løs på en stor kodeendring der du ikke kan verifisere alle linjer. Derfor kan du kombinere det med codemods:
-
-1. Gjør migrasjonen manuelt et par ganger
-2. Lag en steg-for-steg-algoritme
-3. Skaler algoritmen med verktøyene du har
-
-Så bruk AI til å skrive code mods, som kan testes og verifiseres, og bruk så dem trygt på de 90 prosentene av kodebasen som er enkel og grei.
+Case: noe endrer seg i et rammeverk og du må skrive om hele kodebasen. Hva gjør du? Det er fristende å bruke KI til å fikse det, men hvis det er mange endringer, og du ikke kan verifisere hver linje, kan det føles risikofylt å gi den frie tøyler. Få i stedet KI til å skrive codemods; enkle og garantert deterministiske skript. Da får du det beste fra begge verdener.
 
 ### Making Fonts Like It’s 1995!
 
