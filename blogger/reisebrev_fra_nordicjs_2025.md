@@ -1,14 +1,14 @@
 ---
 title: Reisebrev fra Nordic.JS 2025
-date: ÅÅÅÅ-MM-DD
-published:
+date: 2025-10-09
+published: https://medium.com/systek/reisebrev-fra-nordic-js-2025-ccd30389ccdf
 ---
 
 # Reisebrev fra Nordic.JS 2025
 
 ![](../bilder/reisebrev_fra_nordicjs_2025/croppedgjengenpåfrantzen.png)
 
-## Vi reiser
+## Vi reiser til Stockholm!
 
 Seks stykker var vi som skulle på Nordic.JS 2025, destinasjon Stockholm. Erling, Daniel, Karl og Johan kom i felles firersete på tog. Det var lokket med multiplayer Pico Park på Switch for alle reisende, noe det aldri ble noe av. Hans Ole fløy inn fra Oslo, mens siste deltaker og hundre prosent av kvinneandelen, Siri, kom direkte fra Sicilia. Kan nevnes at hun også var i Budapest da vi organiserte turen (mrs. world wide).
 
@@ -75,7 +75,7 @@ En prat som var mer som en kuriositet å regne, noe hun forsåvidt var tidlig ut
 
 ### Lunsj
 
-Vegansk, glutenfri diett ble presset på alle. Det var mer populært hos noen enn hos andre, men det er jo sikkert ganske kult for vegetarianerne å være førsteklasses innbyggere for én gangs skyld. Selv er jeg for, og sier mer av det :+1:. Logistikkmessig en udiskutabel seier for arrangørene.
+Vegansk, glutenfri diett ble presset på alle. Det var mer populært hos noen enn hos andre, men det er jo sikkert ganske kult for vegetarianerne å være førsteklasses innbyggere for én gangs skyld. Selv er jeg for, og sier mer av det 👍. Logistikkmessig en udiskutabel seier for arrangørene.
 
 ### Access-what? why and how. A11y for all
 
@@ -221,7 +221,7 @@ Hvor dårlig betyr både dårlig UX og dårlig sikkerhet. Det som derimot er hel
 
 ### Lightning talks
 
-Kjappe prater av konferansedeltakere. Kan trekke fram at en norsk utviklerkollega fra Ark snakket om fugletitting. Det var en passe påtatt, tørrvittig oppfordring om å være mer med naturen og bli mindre deprimert.
+Kjappe prater av konferansedeltakere. Kan trekke fram at en norsk utviklerkollega fra Ark.no snakket om fugletitting. Det var en passe påtatt, tørrvittig oppfordring om å være mer med naturen og bli mindre deprimert.
 
 ### Codemods in the Era of AI
 
