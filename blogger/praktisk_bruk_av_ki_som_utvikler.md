@@ -41,22 +41,22 @@ Når vi nå har en tydelig plan går jeg i gang med implementasjonen. Her har je
 - Bruke KI rett i kommandolinjen med verktøy som Claude Code eller Gemini CLI
   - Man bruker KI direkte i kommandolinjen, og den kan lese filene i repoet samt kjøre kommandoer direkte i CLIet
   - Fordel: KI har all kontekst den kan ønske om koden, og kan gjøre endringer direkte
-  - Ulemper: Du deler all infoen i repoet med KI. Pass som et minimum på at det ikke er noe sensitivt der, er min grunnregel. Ubegrenset kodetilgang kan også føre med seg ubegrensede og uforutsette endringer om du ikke er sikker, så pass på kvalitetskontroll! Hver commit blir sin egen lille PR.
+  - Ulemper: Du deler all infoen i repoet med KI. Pass som et minimum på at det ikke er noe sensitivt der, er min grunnregel. Ubegrenset kodetilgang kan også føre med seg ubegrensede og uforutsette endringer om du ikke følger med, så pass på kvalitetskontroll! Hver commit blir sin egen lille PR.
 
-Uansett metode ber jeg KI implementere ett enkelt steg om gangen. Når dette er gjort tester jeg, leser over koden, undersøker konsepter jeg ikke er kjent med, fikser feil eller implementasjoner jeg er uenig i, graver etter å forstå hvorfor ulike valg er tatt, refaktorerer kode jeg mener er mindre enn ideell, også videre. Til slutt commiter jeg koden, før neste steg. Kort fortalt gjennomfører jeg alle de kvalitetsgrepene man vanligvis ville gjort, i tillegg til at jeg graver i konsepter jeg ikke har vært borti før eller trenger en oppfriskning på. En målsetning er å aldri commite kode jeg ikke forstår. På denne måten kan man utnytte ens egen intuisjon for kodekvalitet og ha et bevisst forhold til hva man leverer, samtidig som man utnytter KIs evnen til å produsere kode kjapt.
+Uansett metode ber jeg KI implementere ett enkelt steg om gangen. Når dette er gjort tester jeg, leser over koden, undersøker konsepter jeg ikke er kjent med, fikser feil eller implementasjoner jeg er uenig i, graver etter å forstå hvorfor ulike valg er tatt, refaktorerer kode jeg mener er mindre enn ideell, også videre. Til slutt commiter jeg koden, før neste steg. Kort fortalt gjennomfører jeg alle de kvalitetsgrepene jeg vanligvis ville tatt, i tillegg til at jeg graver i konsepter jeg ikke har vært borti før eller trenger en oppfriskning på. En målsetning er å aldri commite kode jeg ikke forstår. På denne måten kan man utnytte ens egen intuisjon for kodekvalitet og ha et bevisst forhold til hva man leverer, samtidig som man utnytter KIs evne til å produsere kode kjapt.
 
-NB! En ting som alltid vil gå tapt med KI-koding er mengdetreningen og muskelminnet man får ved å faktisk skriver kode.
+NB! En ting som alltid vil gå tapt med KI-koding er mengdetrening og muskelminnet man får ved å faktisk skriver kode.
 
 ## Noen bonuser
 
 ### Samtalepartner og beslutningsstøtte
 
-Er du som meg en ubesluttsom person, med et behov for å ha alle detaljer under kontroll før du starter implementasjonen? Da kan KI være en utmerket sparringspartner som kan hjelpe deg med å ta valg raskere. Står jeg ovenfor en 50/50-avgjørelse, lar jeg noen gang bare KI ta valget for meg. Erfaringsmessig er det viktigere å ta et valg enn å ta det perfekte valget, og med KI er det også mye enklere å feile fort.
+Er du som meg en ubesluttsom person, med et behov for å ha alle detaljer under kontroll før du starter en implementasjon? Da kan KI være en utmerket sparringspartner som kan hjelpe deg med å ta valg raskere. Står jeg ovenfor en 50/50-avgjørelse, lar jeg noen gang bare KI ta valget for meg. Erfaringsmessig er det viktigere å ta et valg enn å ta det perfekte valget, og med KI er det også mye enklere å feile fort.
 
 ### PoC / demo / testing
 
-Som hintet til i forrige avsnitt, kan man teste kjapt og feile fort med KI. Det gjør at man enkelt kan lage små og store tester av designpatterns, tredjepartsbiblioteker, UX-design etc., med lav innsats. Da kan man også utnytte at KI ikke bryr seg om kvalitet, og dermed ikke henger seg opp i implementasjonsdetaljer underveis, som en selv kanskje ville gjort.
+Som hintet til i forrige avsnitt, kan man teste kjapt og feile fort med KI. Det gjør at man enkelt kan lage små og store tester av designpatterns, tredjepartsbiblioteker, UX-design, etc., med lav innsats. Da kan man også utnytte at KI ikke bryr seg om kvalitet, og dermed ikke henger seg opp i implementasjonsdetaljer underveis.
 
 ## Konklusjon
 
-KI er et redskap med enorme kapasiteter som også kan brukes til å lage kode med høy kvalitet, men du må ha et bevisst forhold til hvordan det brukes. I tillegg må du ikke glemme å skrive litt kode selv fra tid til annen også.
+KI er et redskap med enorme kapasiteter som også kan brukes til å lage kode med høy kvalitet, men du må ha et bevisst forhold til hvordan det brukes.
