@@ -54,7 +54,7 @@ Av nevneverdige forslag som ligger i pipeline (finn norsk ord) finner vi blant a
 - Hvem: Nico Martin
 - Jobber med: Machine Learning Engineer at 🤗 Hugging Face
 
-Først ut av en uunngåelig andel KI-baserte talks. Her viste han at man lage KI-agenter basert på små LLM'er, og kjøre dem i browseren. Tingene å ta med seg hjem var:
+Først ut av en uunngåelig andel KI-baserte talks. Her viste han at man kan lage KI-agenter basert på små LLM'er, og kjøre dem i browseren. Tingene å ta med seg hjem var:
 
 - [Tool calling](https://medium.com/garantibbva-teknoloji/understanding-llm-tool-calling-traditional-vs-embedded-approaches-fc7e576d05de) er et kraftig verktøy
 - Browseren kan gjøre mer enn du tror
@@ -128,7 +128,7 @@ Så et prosjekt som mange andre prosjekter altså.
 
 ## Nok fag, mer hygge
 
-På dette tidspunktet var deler av gruppa trøtte og gira på å bli klar til dagens høydepunkt: trestjerners middag på Frantzén:scream:. Deler av gruppa tok derfor turen hjem for å sikre tid til powernap og badstue før bespising. Vi møtte deretter opp i samlet gruppe, kledelige fem minutter før tiden.
+På dette tidspunktet var deler av gruppa trøtte og gira på å bli klar til dagens høydepunkt: trestjerners middag på Frantzén 😱. Deler av gruppa tok derfor turen hjem for å sikre tid til powernap og badstue før bespising. Vi møtte deretter opp i samlet gruppe, kledelige fem minutter før tiden.
 
 ## Frantzén
 
