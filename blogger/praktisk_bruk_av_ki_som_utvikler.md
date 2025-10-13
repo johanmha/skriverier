@@ -14,9 +14,7 @@ Notis: jeg bruker i denne bloggen begrepene KI og LLM om hverandre for å beskri
 
 ## Min bakgrunn
 
-Jeg er fullstackutvikler og en typisk middels sen adopter, med sunn skepsis til alt som hypes unødig mye opp. Pragmatisk er en merkelapp jeg gjerne setter på egen teknologibruk. Det siste halvåret har jeg arbeidet i et oppdrag hvor det ble oppfordret sterkt til høyt tempo og utstrakt bruk av KI. Jeg har derfor fått muligheten til å teste hvordan det kan brukes, og har gjort meg opp noen tanker rundt hva som fungerer mer og mindre bra.
-
-![Undertegnede er en pragmatisk teknologibruker, og fornøyd med det](/bilder/praktisk_bruk_av_ki_som_utvikler/adoptioncurve.png)
+Jeg er fullstackutvikler og en typisk [middels sen adopter](https://en.wikipedia.org/wiki/Technology_adoption_life_cycle), med sunn skepsis til alt som hypes unødig mye opp. Pragmatisk er en merkelapp jeg gjerne setter på egen teknologibruk. Det siste halvåret har jeg arbeidet i et oppdrag hvor det ble oppfordret sterkt til høyt tempo og utstrakt bruk av KI. Jeg har derfor fått muligheten til å teste hvordan det kan brukes, og har gjort meg opp noen tanker rundt hva som fungerer mer og mindre bra.
 
 ## Kvalitet og læring
 
