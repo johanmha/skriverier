@@ -14,9 +14,9 @@ Notis: jeg bruker i denne bloggen begrepene KI og LLM om hverandre for å beskri
 
 ## Min bakgrunn
 
-Jeg er fullstackutvikler og en typisk middels sen adopter, med sunn skepsis til alt som hypes unødig mye opp. Det siste halvåret har jeg brukt i et oppdrag hvor det ble oppfordret sterkt til høyt tempo og utstrakt bruk av KI. Jeg har derfor fått muligheten til å teste hvordan det kan brukes, og har gjort meg opp noen tanker rundt hva som fungerer mer og mindre bra.
+Jeg er fullstackutvikler og en typisk middels sen adopter, med sunn skepsis til alt som hypes unødig mye opp. Pragmatisk er en merkelapp jeg gjerne setter på egen teknologibruk. Det siste halvåret har jeg arbeidet i et oppdrag hvor det ble oppfordret sterkt til høyt tempo og utstrakt bruk av KI. Jeg har derfor fått muligheten til å teste hvordan det kan brukes, og har gjort meg opp noen tanker rundt hva som fungerer mer og mindre bra.
 
-- **bilde: her er jeg på adoption curve graf**
+![Undertegnede er en pragmatisk teknologibruker, og fornøyd med det](/bilder/praktisk_bruk_av_ki_som_utvikler/adoptioncurve.png)
 
 ## Kvalitet og læring
 
@@ -43,9 +43,9 @@ Når vi nå har en tydelig plan går jeg i gang med implementasjonen. Her har je
   - Fordel: KI har all kontekst den kan ønske om koden, og kan gjøre endringer direkte
   - Ulemper: Du deler all infoen i repoet med KI. Pass som et minimum på at det ikke er noe sensitivt der, er min grunnregel. Ubegrenset kodetilgang kan også føre med seg ubegrensede og uforutsette endringer om du ikke følger med, så pass på kvalitetskontroll! Hver commit blir sin egen lille PR.
 
-Uansett metode ber jeg KI implementere ett enkelt steg om gangen. Når dette er gjort tester jeg, leser over koden, undersøker konsepter jeg ikke er kjent med, fikser feil eller implementasjoner jeg er uenig i, graver etter å forstå hvorfor ulike valg er tatt, refaktorerer kode jeg mener er mindre enn ideell, også videre. Til slutt commiter jeg koden, før neste steg. Kort fortalt gjennomfører jeg alle de kvalitetsgrepene jeg vanligvis ville tatt, i tillegg til at jeg graver i konsepter jeg ikke har vært borti før eller trenger en oppfriskning på. En målsetning er å aldri commite kode jeg ikke forstår. På denne måten kan man utnytte ens egen intuisjon for kodekvalitet og ha et bevisst forhold til hva man leverer, samtidig som man utnytter KIs evne til å produsere kode kjapt.
+Uansett metode ber jeg KI implementere ett enkelt steg om gangen. Når dette er gjort tester jeg, leser over koden, undersøker konsepter jeg ikke er kjent med, fikser feil eller implementasjoner jeg er uenig i, graver etter å forstå hvorfor ulike valg er tatt, refaktorerer kode jeg mener er mindre enn ideell, også videre. Til slutt commiter jeg koden, før jeg angriper neste steg på planen. Kort fortalt gjennomfører jeg alle de kvalitetsgrepene jeg vanligvis ville tatt, i tillegg til at jeg graver i konsepter jeg ikke har vært borti før eller trenger en oppfriskning på. En målsetning er å aldri commite kode jeg ikke forstår. På denne måten kan man utnytte ens egen intuisjon for kodekvalitet og ha et bevisst forhold til hva man leverer, samtidig som man utnytter KIs evne til å produsere kode kjapt.
 
-NB! En ting som alltid vil gå tapt med KI-koding er mengdetrening og muskelminnet man får ved å faktisk skriver kode.
+NB! En ting som alltid vil gå tapt med KI-koding er mengdetrening og muskelminnet man får ved å faktisk skrive kode.
 
 ## Noen bonuser
 
@@ -59,4 +59,4 @@ Som hintet til i forrige avsnitt, kan man teste kjapt og feile fort med KI. Det 
 
 ## Konklusjon
 
-KI er et redskap med enorme kapasiteter som også kan brukes til å lage kode med høy kvalitet, men du må ha et bevisst forhold til hvordan det brukes.
+KI er et redskap med enorme kapasiteter som også kan brukes til å lage kode med høy kvalitet, men man bør ha et bevisst forhold til hvordan det brukes.
