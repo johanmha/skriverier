@@ -8,13 +8,13 @@ published:
 
 ## Enda en artikkel om KI
 
-Jepp, jeg gjør det; skriver enda en blogg i havet av innhold på KI. Hvorfor? Fordi blant titler som "OpenAI just made your entire tech stack obsolete", krydret med ord og uttrykk som "tar fra deg jobben" og ikke minst "vibekoding", savner jeg noen lavmeldte stemmer som bare sier hvordan de har inkorporert nok et verktøy inn i arbeidshverdagen. Et kraftig verktøy, med tilsvarende stor slagside, og derfor med ekstra god grunn til bevissthet i bruken.
+Jepp, jeg gjør det; skriver enda en blogg i havet av innhold om KI. Hvorfor? Fordi blant titler som "OpenAI just made your entire tech stack obsolete", krydret med ord og uttrykk som "tar fra deg jobben" og ikke minst "vibbekoding", savner jeg noen lavmeldte stemmer som bare sier hvordan de har inkorporert nok et verktøy i arbeidshverdagen. Et kraftig verktøy, med tilsvarende stor slagside, og derfor med ekstra god grunn til bevissthet i bruken.
 
 Notis: jeg bruker i denne bloggen begrepene KI og LLM om hverandre for å beskrive tjenester som eksempelvis, Claude, Gemini, Chat GPT også videre.
 
 ## Min bakgrunn
 
-Jeg er fullstackutvikler og en typisk [middels sen adopter](https://en.wikipedia.org/wiki/Technology_adoption_life_cycle), med sunn skepsis til alt som hypes unødig mye opp. Pragmatisk er en merkelapp jeg gjerne setter på egen teknologibruk. Det siste halvåret har jeg arbeidet i et oppdrag hvor det ble oppfordret sterkt til høyt tempo og utstrakt bruk av KI. Jeg har derfor fått muligheten til å teste hvordan det kan brukes, og har gjort meg opp noen tanker rundt hva som fungerer mer og mindre bra.
+Jeg er fullstackutvikler og en typisk [middels sen adopter](https://en.wikipedia.org/wiki/Technology_adoption_life_cycle), med sunn skepsis til alt som hauses unødig mye opp. _Pragmatisk_ er en merkelapp jeg gjerne setter på egen teknologibruk. Det siste halvåret har jeg arbeidet i et oppdrag hvor det ble oppfordret sterkt til høyt tempo og utstrakt bruk av KI. Jeg har derfor fått muligheten til å teste hvordan det kan brukes, og har gjort meg opp noen tanker rundt hva som fungerer bra og mindre bra.
 
 ## Kvalitet og læring
 
@@ -24,9 +24,9 @@ Hvordan opprettholder man læring med et verktøy til disposisjon som kan gjøre
 
 ### Et liv som kodearkitekt
 
-KI må ikke ta plassen fra god planlegging. En positiv side ved å ha en agent som skriver koden din, er at du til en viss grad blir presset til å lage gode planer, ettersom det ellers kan gå i alle slags retninger. Å rulle tilbake arbeid for en udeterministisk agent er heller ikke trivielt, selv om jeg opplever at de har blitt bedre i å reversere sitt eget arbeid den siste tiden.
+KI må ikke ta plassen fra god planlegging. En positiv side ved å ha en agent som skriver koden din, er at du til en viss grad blir presset til å lage gode planer, ettersom det ellers kan gå i alle slags retninger. Å rulle tilbake arbeid for en udeterministisk agent er heller ikke trivielt, selv om jeg opplever at de har blitt bedre i å reversere sitt eget rot den siste tiden.
 
-For å minimere dette problemet starter jeg derfor prosessen med å legge en plan for implementasjonen. Den lager jeg alene, mens jeg går, i kontorstolen, og i samarbeid med andre flinke folk alt etter kompleksitet. Målet er å ha en overordnet plan for målbildet jeg vil oppnå og verktøyene jeg vil bruke for å komme dit. Deretter presenterer jeg planen for min valgte LLM, og spikker videre på den til jeg har en liste med konkrete steg som kan implementeres ett og ett.
+For å minimere dette problemet starter jeg derfor prosessen med å legge en plan for implementasjonen. Den lager jeg alene, mens jeg går, i kontorstolen, og i samarbeid med andre flinke folk, alt etter kompleksitet. Målet er å ha en overordnet plan for målbildet jeg vil oppnå og verktøyene jeg vil bruke for å komme dit. Deretter presenterer jeg planen for min valgte LLM, og spikker videre på den til jeg har en liste med konkrete steg som kan implementeres ett og ett.
 
 ### Implementasjon
 
@@ -34,14 +34,14 @@ Når vi nå har en tydelig plan går jeg i gang med implementasjonen. Her har je
 
 - Interagere med KI gjennom web-grensesnitt
   - Man mater inn kontekst manuelt gjennom brukergrensesnittet og implementerer selv koden den kommer tilbake med
-  - Fordel: du har full kontroll over hva KIen har tilgang på
+  - Fordel: du har full kontroll over hva KI-en har tilgang på
   - Ulempe: du må selv mate kontekst og klippe/lime kode hit og dit
 - Bruke KI rett i kommandolinjen med verktøy som Claude Code eller Gemini CLI
-  - Man bruker KI direkte i kommandolinjen, og den kan lese filene i repoet samt kjøre kommandoer direkte i CLIet
+  - Man bruker KI direkte i kommandolinjen, og den kan lese filene i repoet samt kjøre kommandoer direkte i CLI-et
   - Fordel: KI har all kontekst den kan ønske om koden, og kan gjøre endringer direkte
   - Ulemper: Du deler all infoen i repoet med KI. Pass som et minimum på at det ikke er noe sensitivt der, er min grunnregel. Ubegrenset kodetilgang kan også føre med seg ubegrensede og uforutsette endringer om du ikke følger med, så pass på kvalitetskontroll! Hver commit blir sin egen lille PR.
 
-Uansett metode ber jeg KI implementere ett enkelt steg om gangen. Når dette er gjort tester jeg, leser over koden, undersøker konsepter jeg ikke er kjent med, fikser feil eller implementasjoner jeg er uenig i, graver etter å forstå hvorfor ulike valg er tatt, refaktorerer kode jeg mener er mindre enn ideell, også videre. Til slutt commiter jeg koden, før jeg angriper neste steg på planen. Kort fortalt gjennomfører jeg alle de kvalitetsgrepene jeg vanligvis ville tatt, i tillegg til at jeg graver i konsepter jeg ikke har vært borti før eller trenger en oppfriskning på. En målsetning er å aldri commite kode jeg ikke forstår. På denne måten kan man utnytte ens egen intuisjon for kodekvalitet og ha et bevisst forhold til hva man leverer, samtidig som man utnytter KIs evne til å produsere kode kjapt.
+Uansett metode ber jeg KI implementere ett enkelt steg om gangen. Når dette er gjort tester jeg, leser over koden, undersøker konsepter jeg ikke er kjent med, fikser feil eller implementasjoner jeg er uenig i, graver etter å forstå hvorfor ulike valg er tatt, refaktorerer kode jeg mener er mindre enn ideell, også videre. Til slutt commiter jeg koden, før jeg angriper neste steg på planen. Kort fortalt gjennomfører jeg alle de kvalitetsgrepene jeg vanligvis ville tatt, i tillegg til at jeg graver i konsepter jeg ikke har vært borti før eller trenger en oppfriskning på. En målsetning er å aldri commite kode jeg ikke forstår. På denne måten kan man utnytte ens egen intuisjon for kodekvalitet og ha et bevisst forhold til hva man leverer, samtidig som man utnytter KI-ens evne til å produsere kode kjapt.
 
 NB! En ting som alltid vil gå tapt med KI-koding er mengdetrening og muskelminnet man får ved å faktisk skrive kode.
 
@@ -51,9 +51,9 @@ NB! En ting som alltid vil gå tapt med KI-koding er mengdetrening og muskelminn
 
 Er du som meg en ubesluttsom person, med et behov for å ha alle detaljer under kontroll før du starter en implementasjon? Da kan KI være en utmerket sparringspartner som kan hjelpe deg med å ta valg raskere. Står jeg ovenfor en 50/50-avgjørelse, lar jeg noen gang bare KI ta valget for meg. Erfaringsmessig er det viktigere å ta et valg enn å ta det perfekte valget, og med KI er det også mye enklere å feile fort.
 
-### PoC / demo / testing
+### PoC/demo/testing
 
-Som hintet til i forrige avsnitt, kan man teste kjapt og feile fort med KI. Det gjør at man enkelt kan lage små og store tester av designpatterns, tredjepartsbiblioteker, UX-design, etc., med lav innsats. Da kan man også utnytte at KI ikke bryr seg om kvalitet, og dermed ikke henger seg opp i implementasjonsdetaljer underveis.
+Som hintet til i forrige avsnitt, kan man teste kjapt og feile fort med KI. Det gjør at man enkelt kan lage små og store tester av design patterns, tredjepartsbiblioteker, UX-design, etc., med lav innsats. Da kan man også utnytte at KI ikke bryr seg om kvalitet, og dermed ikke henger seg opp i implementasjonsdetaljer underveis.
 
 ## Konklusjon
 
