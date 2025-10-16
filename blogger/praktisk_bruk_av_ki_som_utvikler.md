@@ -32,13 +32,15 @@ For å minimere dette problemet starter jeg derfor prosessen med å legge en pla
 
 Når vi nå har en tydelig plan går jeg i gang med implementasjonen. Her har jeg stort sett brukt følgende fremgangsmåter, som antakelig er kjent for mange:
 
-_Interagere med KI gjennom web-grensesnitt_
+**Interagere med KI gjennom web-grensesnitt**
+
 Man mater inn kontekst manuelt gjennom brukergrensesnittet og implementerer selv koden den kommer tilbake med
 
 - Fordel: du har full kontroll over hva KI-en har tilgang på
 - Ulempe: du må selv mate kontekst og klippe/lime kode hit og dit
 
-_Bruke KI rett i kommandolinjen med verktøy som Claude Code eller Gemini CLI_
+**Bruke KI rett i kommandolinjen med verktøy som Claude Code eller Gemini CLI**
+
 Man bruker KI direkte i kommandolinjen, og den kan lese filene i repoet samt kjøre kommandoer direkte i CLI-et
 
 - Fordel: KI har all kontekst den kan ønske om koden, og kan gjøre endringer direkte
