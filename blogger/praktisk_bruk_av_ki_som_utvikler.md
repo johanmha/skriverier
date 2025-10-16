@@ -32,14 +32,17 @@ For å minimere dette problemet starter jeg derfor prosessen med å legge en pla
 
 Når vi nå har en tydelig plan går jeg i gang med implementasjonen. Her har jeg stort sett brukt følgende fremgangsmåter, som antakelig er kjent for mange:
 
-- Interagere med KI gjennom web-grensesnitt
-  - Man mater inn kontekst manuelt gjennom brukergrensesnittet og implementerer selv koden den kommer tilbake med
-  - Fordel: du har full kontroll over hva KI-en har tilgang på
-  - Ulempe: du må selv mate kontekst og klippe/lime kode hit og dit
-- Bruke KI rett i kommandolinjen med verktøy som Claude Code eller Gemini CLI
-  - Man bruker KI direkte i kommandolinjen, og den kan lese filene i repoet samt kjøre kommandoer direkte i CLI-et
-  - Fordel: KI har all kontekst den kan ønske om koden, og kan gjøre endringer direkte
-  - Ulemper: Du deler all infoen i repoet med KI. Pass som et minimum på at det ikke er noe sensitivt der, er min grunnregel. Ubegrenset kodetilgang kan også føre med seg ubegrensede og uforutsette endringer om du ikke følger med, så pass på kvalitetskontroll! Hver commit blir sin egen lille PR.
+_Interagere med KI gjennom web-grensesnitt_
+Man mater inn kontekst manuelt gjennom brukergrensesnittet og implementerer selv koden den kommer tilbake med
+
+- Fordel: du har full kontroll over hva KI-en har tilgang på
+- Ulempe: du må selv mate kontekst og klippe/lime kode hit og dit
+
+_Bruke KI rett i kommandolinjen med verktøy som Claude Code eller Gemini CLI_
+Man bruker KI direkte i kommandolinjen, og den kan lese filene i repoet samt kjøre kommandoer direkte i CLI-et
+
+- Fordel: KI har all kontekst den kan ønske om koden, og kan gjøre endringer direkte
+- Ulemper: Du deler all infoen i repoet med KI. Pass som et minimum på at det ikke er noe sensitivt der, er min grunnregel. (Eksempelvis git-ignorerte credentials i .env-filer.) Ubegrenset kodetilgang kan også føre med seg ubegrensede og uforutsette endringer om du ikke følger med, så pass på kvalitetskontroll! Hver commit blir sin egen lille PR.
 
 Uansett metode ber jeg KI implementere ett enkelt steg om gangen. Når dette er gjort tester jeg, leser over koden, undersøker konsepter jeg ikke er kjent med, fikser feil eller implementasjoner jeg er uenig i, graver etter å forstå hvorfor ulike valg er tatt, refaktorerer kode jeg mener er mindre enn ideell, også videre. Til slutt commiter jeg koden, før jeg angriper neste steg på planen. Kort fortalt gjennomfører jeg alle de kvalitetsgrepene jeg vanligvis ville tatt, i tillegg til at jeg graver i konsepter jeg ikke har vært borti før eller trenger en oppfriskning på. En målsetning er å aldri commite kode jeg ikke forstår. På denne måten kan man utnytte ens egen intuisjon for kodekvalitet og ha et bevisst forhold til hva man leverer, samtidig som man utnytter KI-ens evne til å produsere kode kjapt.
 
