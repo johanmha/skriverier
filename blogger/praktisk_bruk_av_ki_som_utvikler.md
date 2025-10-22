@@ -1,20 +1,20 @@
 ---
 title: Praktisk bruk av KI som utvikler
-date: ÅÅÅÅ-MM-DD
-published:
+date: 2025-10-21
+published: https://medium.com/systek/praktisk-bruk-av-ki-som-utvikler-e61acc03ef04
 ---
 
 # Praktisk bruk av KI som utvikler
 
 ## Enda en artikkel om KI
 
-Jepp, jeg gjør det; skriver enda en blogg i havet av innhold om KI. Hvorfor? Fordi blant titler som "OpenAI just made your entire tech stack obsolete", krydret med ord og uttrykk som "tar fra deg jobben" og ikke minst "vibbekoding", savner jeg noen lavmeldte stemmer som bare sier hvordan de har inkorporert nok et verktøy i arbeidshverdagen. Et kraftig verktøy, med tilsvarende stor slagside, og derfor med ekstra god grunn til bevissthet i bruken.
+Jepp, jeg gjør det; skriver enda en blogg i havet av innhold om KI. Hvorfor? Fordi blant titler som "OpenAI just made your entire tech stack obsolete", krydret med ord og uttrykk som "tar fra deg jobben" og ikke minst "vibbekoding", savner jeg noen lavmælte stemmer som bare sier hvordan de har inkorporert nok et verktøy i arbeidshverdagen. Et kraftig verktøy, med tilsvarende stor slagside, og derfor med ekstra god grunn til bevissthet i bruken.
 
 Notis: jeg bruker i denne bloggen begrepene KI og LLM om hverandre for å beskrive tjenester som eksempelvis, Claude, Gemini, Chat GPT også videre.
 
 ## Min bakgrunn
 
-Jeg er fullstackutvikler og en typisk [middels sen adopter](https://en.wikipedia.org/wiki/Technology_adoption_life_cycle), med sunn skepsis til alt som hauses unødig mye opp. _Pragmatisk_ er en merkelapp jeg gjerne setter på egen teknologibruk. Det siste halvåret har jeg arbeidet i et oppdrag hvor det ble oppfordret sterkt til høyt tempo og utstrakt bruk av KI. Jeg har derfor fått muligheten til å teste hvordan det kan brukes, og har gjort meg opp noen tanker rundt hva som fungerer bra og mindre bra.
+Jeg er fullstackutvikler og en typisk [middels sen adopter](https://en.wikipedia.org/wiki/Technology_adoption_life_cycle), med sunn skepsis til alt som hauses unødig mye opp. _Pragmatisk_ er en merkelapp jeg gjerne setter på egen teknologibruk. Det siste halvåret har jeg arbeidet i et oppdrag hvor det ble oppfordret sterkt til høyt tempo og utstrakt bruk av KI. Jeg har derfor fått muligheten til å teste hvordan det kan brukes, særlig i utvikling av webapplikasjoner med Next.js og Java. Basert på det har gjort meg opp noen tanker rundt hva som fungerer bra, og mindre bra
 
 ## Kvalitet og læring
 
