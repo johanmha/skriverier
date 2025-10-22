@@ -46,6 +46,7 @@ function generateTableRows() {
 
   try {
     const files = readdirSync(BLOG_DIR);
+    const entries = [];
 
     files.forEach((file) => {
       if (extname(file).toLowerCase() === '.md') {
@@ -54,11 +55,22 @@ function generateTableRows() {
         const metadata = extractMetadata(content);
 
         if (metadata?.title && metadata?.date && metadata?.published) {
-          const publishedLink = `[Lenke](${metadata.published})`;
-
-          tableRows += `| ${metadata.title} | ${metadata.date} | ${publishedLink} |\n`;
+          entries.push({
+            title: metadata.title,
+            date: metadata.date,
+            published: metadata.published
+          });
         }
       }
+    });
+
+    // Sort by date, newest first
+    entries.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+    // Generate table rows
+    entries.forEach((entry) => {
+      const publishedLink = `[Lenke](${entry.published})`;
+      tableRows += `| ${entry.title} | ${entry.date} | ${publishedLink} |\n`;
     });
 
     return tableRows;
